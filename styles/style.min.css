@@ -225,7 +225,7 @@ button {
 
 .subheader__logo {
     display: block;
-    max-width: 180px;
+    max-width: 100%;
     -ms-grid-column-align: center;
     justify-self: center
 }
