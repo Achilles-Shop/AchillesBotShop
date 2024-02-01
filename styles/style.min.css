@@ -806,6 +806,10 @@ button {
     min-width: 230px
 }
 
+.cart__col-opisanie {
+    min-width: 230px
+}
+
 .cart__col-price {
     min-width: 100px
 }
