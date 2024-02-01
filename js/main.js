@@ -190,8 +190,8 @@ try {
   const generateList = data => data.reduce((html, item, i) =>
   html + `<li class="card-good__select-item" data-id="${i}">${item}</li>`, '');
 
-  const renderCardGood = ([{ id, brand, name, cost, color, sizes, photo }]) => {
-    const data = { brand, name, cost, id };
+  const renderCardGood = ([{ id, brand, name, opisanie, cost, color, sizes, photo }]) => {
+    const data = { brand, name, opisanie, cost, id };
     cardGoodImage.src = `./images/goods-image/${photo}`;
     cardGoodImage.alt = `${brand} ${name}`;
     cardGoodBrand.textContent = brand;
