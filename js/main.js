@@ -179,7 +179,7 @@ try {
   const cardGoodBrand = document.querySelector('.card-good__brand');
   const cardGoodTitle = document.querySelector('.card-good__title');
   const cardGoodPrice = document.querySelector('.card-good__price');
-  const cardGoodPrice = document.querySelector('.card-good__opisanie');
+  const cardGoodOpisanie = document.querySelector('.card-good__opisanie');
   const cardGoodColor = document.querySelector('.card-good__color');
   const cardGoodSelectWrapper = document.querySelectorAll('.card-good__select__wrapper');
   const cardGoodColorList = document.querySelector('.card-good__color-list');
@@ -196,6 +196,7 @@ try {
     cardGoodImage.alt = `${brand} ${name}`;
     cardGoodBrand.textContent = brand;
     cardGoodTitle.textContent = name;
+    cardGoodTitle.textContent = opisanie;
     cardGoodPrice.textContent = `${cost} ₽`;
     if (color) {
       cardGoodColor.textContent = color[0];
