@@ -179,6 +179,7 @@ try {
   const cardGoodBrand = document.querySelector('.card-good__brand');
   const cardGoodTitle = document.querySelector('.card-good__title');
   const cardGoodPrice = document.querySelector('.card-good__price');
+  const cardGoodPrice = document.querySelector('.card-good__opisanie');
   const cardGoodColor = document.querySelector('.card-good__color');
   const cardGoodSelectWrapper = document.querySelectorAll('.card-good__select__wrapper');
   const cardGoodColorList = document.querySelector('.card-good__color-list');
