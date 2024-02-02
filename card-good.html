@@ -8,6 +8,8 @@
     <meta name="description" content="AChilles Shop — богатый выбор сняряжения!">
     <title>Achilles Shop</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="icon" type="image/png" href="./images/favicon/favicon.png">
     <link rel="preload" href="fonts/CoFoSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/CoFoSans-Black.woff2" as="font" type="font/woff2" crossorigin>
@@ -49,9 +51,15 @@
         </section>
         <section class="card-good">
             <div class="container card-good__wrapper">
-                <div class="card-good__image-wrapper">
-                    <img class="card-good__image" src="" alt="">
+        
+                    <div class="swiper-container card-good__image">
+  <div class="swiper-wrapper"></div>
+  <!-- Добавьте кнопки навигации, если необходимо -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
                 </div>
+                
                 <div class="card-good__description">
                     <h2 class="card-good__title-wrapper">
                         <p class="card-good__brand"></p>
@@ -158,6 +166,7 @@
         </div>
     </div>
 
-    <script src="js/main.js"></script>
+    
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
