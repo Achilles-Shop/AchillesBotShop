@@ -99,11 +99,11 @@ try {
   const cardGoodBuy = document.querySelector('.card-good__buy');
 
   const generateList = data => data.reduce((html, item, i) =>
-    html + `<li class="card-good__select-item" data-id="${i}">${item}</li>`, '');
+  html + `<li class="card-good__select-item" data-id="${i}">${item}</li>`, '');
 
-  const renderCardGood = ([{ id, brand, name, cost, descr, color, sizes, photos }]) => {
-    const data = { brand, name, cost, descr, id, photos };
-    cardGoodImage.src = `./images/goods-image/${photos[0]}`;
+  const renderCardGood = ([{ id, brand, name, cost, descr, color, sizes, photo }]) => {
+    const data = { brand, name, cost, descr, id };
+    cardGoodImage.src = `./images/goods-image/${photo}`;
     cardGoodImage.alt = `${brand} ${name}`;
     cardGoodBrand.textContent = brand;
     cardGoodTitle.textContent = name;
@@ -113,23 +113,18 @@ try {
       cardGoodColor.textContent = color[0];
       cardGoodColor.dataset.id = 0;
       cardGoodColorList.innerHTML = generateList(color);
-    } else {
+    }
+    else {
       cardGoodColor.style.display = 'none';
     }
     if (sizes) {
       cardGoodSizes.textContent = sizes[0];
       cardGoodSizes.dataset.id = 0;
       cardGoodSizesList.innerHTML = generateList(sizes);
-    } else {
+    }
+    else{
       cardGoodSizes.style.display = 'none';
     }
-
-    // Вызываем updateSliderImage при загрузке страницы
-    updateSliderImage(photos[0]);
-
-    // Добавляем обработчики событий для кнопок "Next" и "Prev"
-    document.querySelector('.card-good__slider-btn-prev').addEventListener('click', () => prevImage(photos));
-    document.querySelector('.card-good__slider-btn-next').addEventListener('click', () => nextImage(photos));
 
     if (getLocalStorage().some(item => item.id === id)) {
       cardGoodBuy.classList.add('delete');
@@ -145,19 +140,20 @@ try {
       }
       if (color) {
         data.color = cardGoodColor.textContent;
-      }
+      } 
       if (sizes) {
         data.size = cardGoodSizes.textContent;
       }
 
       cardGoodBuy.classList.add('delete');
       cardGoodBuy.textContent = 'Удалить из корзины';
-
+      
       const cardData = getLocalStorage();
       cardData.push(data);
       setLocalStorage(cardData);
+
     });
-  
+  };
 
   cardGoodSelectWrapper.forEach(item => {
     item.addEventListener('click', e => {
@@ -175,26 +171,7 @@ try {
   });
 
   getGoods(renderCardGood, 'id', hash);
-} catch (err) {
+}
+catch (err) {
   console.warn(err);
-}
-
-// Функция для обновления изображения в слайдере
-function updateSliderImage(photo) {
-  cardGoodImage.src = `./images/goods-image/${photo}`;
-  cardGoodImage.alt = `${cardGoodBrand.textContent} ${cardGoodTitle.textContent}`;
-}
-
-// Функция для переключения к предыдущему изображению в слайдере
-function prevImage(photos) {
-  const currentIndex = photos.indexOf(cardGoodImage.src.split('/').pop());
-  const prevIndex = (currentIndex - 1 + photos.length) % photos.length;
-  updateSliderImage(photos[prevIndex]);
-}
-
-// Функция для переключения к следующему изображению в слайдере
-function nextImage(photos) {
-  const currentIndex = photos.indexOf(cardGoodImage.src.split('/').pop());
-  const nextIndex = (currentIndex + 1) % photos.length;
-  updateSliderImage(photos[nextIndex]);
 }
