@@ -32,27 +32,7 @@ const getGoods = (callback, prop, value) => {
   });
 };
 
-// Слушатели событий
-headerCityButton.addEventListener('click', () => {
-  const city = prompt('Укажите ваш город!');
-  headerCityButton.textContent = city;
-  localStorage.setItem('urban-location', city);
-});
 
-subheaderCart.addEventListener('click', cartModalOpen);
-cartOverlay.addEventListener('click', event => {
-  const target = event.target;
-  if (target.matches('.cart__btn-close') || target.matches('.cart-overlay')) {
-    cartModalClose();
-  }
-});
-
-cartListGoods.addEventListener('click', e => {
-  if (e.target.matches('.btn-delete')) {
-    deleteItemCart(e.target.dataset.id);
-    renderCart();
-  }
-});
 
 // Страница категорий товаров
 try {
