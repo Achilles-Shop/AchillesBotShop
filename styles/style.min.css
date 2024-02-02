@@ -862,7 +862,7 @@ button {
     padding: 0px 0;
     background-color: #fff;
     color: #fff;
-    margin-top: 0px; /* Добавленный отступ сверху */
+    margin-top: 25px; /* Добавленный отступ сверху */
 }
 
 .footer__columns {
