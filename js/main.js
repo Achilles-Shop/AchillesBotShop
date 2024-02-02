@@ -175,3 +175,36 @@ try {
 catch (err) {
   console.warn(err);
 }
+
+
+// Хэш элемент для изменения содержимого страниц
+let hash = location.hash.substring(1);
+
+// Функция для обновления изображения в слайдере
+function updateSliderImage(photo) {
+  cardGoodImage.src = `./images/goods-image/${photo}`;
+  cardGoodImage.alt = `${cardGoodBrand.textContent} ${cardGoodTitle.textContent}`;
+}
+
+// Функция для переключения к предыдущему изображению в слайдере
+function prevImage() {
+  const currentProduct = products.find(item => item.id === hash);
+  const currentIndex = currentProduct ? currentProduct.photo.indexOf(cardGoodImage.src.split('/').pop()) : 0;
+  const prevIndex = (currentIndex - 1 + currentProduct.photo.length) % currentProduct.photo.length;
+  updateSliderImage(currentProduct.photo[prevIndex]);
+}
+
+// Функция для переключения к следующему изображению в слайдере
+function nextImage() {
+  const currentProduct = products.find(item => item.id === hash);
+  const currentIndex = currentProduct ? currentProduct.photo.indexOf(cardGoodImage.src.split('/').pop()) : 0;
+  const nextIndex = (currentIndex + 1) % currentProduct.photo.length;
+  updateSliderImage(currentProduct.photo[nextIndex]);
+}
+
+// Вызываем updateSliderImage при загрузке страницы
+updateSliderImage('');
+
+// Добавляем обработчики событий для кнопок "Next" и "Prev"
+document.querySelector('.card-good__slider-btn-prev').addEventListener('click', prevImage);
+document.querySelector('.card-good__slider-btn-next').addEventListener('click', nextImage);
