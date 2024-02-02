@@ -17,66 +17,101 @@
 </head>
 
 <body>
-           <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
-                <button class="header__city-button">Ваш город?</button>
-                <div class="header__right-block">
-                    <p class="header__delivery">Бесконтактная доставка</p>
-                    <p class="header__pay">Платите чем хотите</p>
-                </div>
-            </div>
+          <header class="header">
+    <div class="container">
+        <div class="header__wrapper"> 
+            <a href="index.html" class="subheader__logo">
+                <img src="images/svg/logoPNG.png" alt="Achilles Shop">
+            </a>
+            
+            <button class="header__button" onclick="location.href='contacts.html'">Контакты</button>
         </div>
-    </header>
+    </div>
+</header>
     <main>
-        <section class="subheader">
-            <div class="container">
-                <div class="subheader__wrapper">
-
-                    <a href="index.html" class="subheader__logo"><img src="images/svg/logoPNG.png" alt="Achilles Shop"></a>
-
-                    <nav class="subheader__navigation navigation">
-                        <ul class="navigation__list">
-                            <li class="navigation__item">
-                                <a class="navigation__link" href="goods.html#women">Сняряжение</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a class="navigation__link" href="goods.html#men">Рюкзаки</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a class="navigation__link" href="goods.html#kids">Фурнитура</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    
-                    <button class="subheader__cart">Корзина</button>
-                </div>
-            </div>
-        </section>
+           <div class="container">
+       <div class="subheader__wrapper">          
+             <!-- <nav class="subheader__navigation navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="goods.html#women">Снаряжение</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="goods.html#men">Рюкзаки</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="goods.html#kids">Фурнитура</a>
+                    </li>
+                </ul>
+            </nav>-->
+        </div>
+    </div>
+</section>
         <section class="promo">
             <div class="container">
                 <ul class="promo__grid">
-                    <li class="promo__grid-item promo__grid-item__big">
-                        <img class="promo__grid-image" src="./images/beach.jpg" alt="beach">
-                    </li>
-                    <li class="promo__grid-item promo__grid-item__small">
-                        <img class="promo__grid-image" src="./images/sport.jpg" alt="sport">
-                    </li>
-                    <li class="promo__grid-item promo__grid-item__small">
-                        <img class="promo__grid-image" src="./images/umbrella.jpg" alt="umbrella">
-                    </li>
+                    <li class="promo1">
+                      <a href="goods.html#men">
+                        <div class="promo__grid-item-content">
+            <img class="promo__grid-image" src="./images/premium.jpg" alt="premium">
+            <div class="promo__text-overlay">
+                Рюкзаки
+            </div>
+        </div>
+    </a>
+   </li>
+                    <li class="promo2">
+                      <a href="goods.html#women">
+                        <div class="promo__grid-item-content">
+            <img class="promo__grid-image" src="./images/umbrella.jpg" alt="umbrella">
+            <div class="promo__text-overlay">
+                Бронежилеты
+            </div>
+        </div>
+    </a>
+   </li>
+                    <li class="promo3">
+                      <a href="goods.html#kids">
+                        <div class="promo__grid-item-content">
+            <img class="promo__grid-image" src="./images/child.jpg" alt="child">
+            <div class="promo__text-overlay">
+                Подсумки
+            </div>
+        </div>
+    </a>
+   </li>
+                    <li class="promo4">
+                      <a href="#">
+                        <div class="promo__grid-item-content">
+            <img class="promo__grid-image" src="./images/beach.jpg" alt="beach">
+            <div class="promo__text-overlay">
+                Фурнитура
+            </div>
+        </div>
+    </a>
+   </li>
+                    <li class="promo5">
+                      <a href="#">
+                        <div class="promo__grid-item-content">
+            <img class="promo__grid-image" src="./images/sport.jpg" alt="sport">
+            <div class="promo__text-overlay">
+                Шлемы
+            </div>
+        </div>
+    </a>
+   </li>
+                    <li class="promo6">
+                      <a href="#">
+                        <div class="promo__grid-item-content">
+            <img class="promo__grid-image" src="./images/sneakers.jpg" alt="sneakers">
+            <div class="promo__text-overlay">
+                Разгрузки
+            </div>
+        </div>
+    </a>
+   </li>
+                    
                 </ul>
-
-                <ul class="promo__grid promo__grid-reverse">
-                    <li class="promo__grid-reverse-item promo__grid-reverse-item__big">
-                        <img class="promo__grid-image" src="./images/premium.jpg" alt="premium">
-                    </li>
-                    <li class="promo__grid-reverse-item promo__grid-reverse-item__small">
-                        <img class="promo__grid-image" src="./images/sneakers.jpg" alt="sneakers">
-                    </li>
-                    <li class="promo__grid-reverse-item promo__grid-reverse-item__small">
-                        <img class="promo__grid-image" src="./images/child.jpg" alt="child">
-                    </li>
                 </ul>
             </div>
         </section>
