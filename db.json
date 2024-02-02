@@ -10,23 +10,10 @@
             "Зеленые",
             "Оранжевые"
         ],
-        "sizes": [
-            "1",
-            "2",
-            "3"
-        ],
-       "photos": [
-    {
-      "photo": "helt.jpg",
-      "preview": "helt.jpg"
-    },
-    {
-      "photo": "additional_photo1.jpg",
-      "preview": "additional_preview1.jpg"
-    },
-    {
-      "photo": "additional_photo2.jpg",
-      "preview": "additional_preview2.jpg"
+       "sizes": ["1", "2"],
+        "photo": "helt.jpg",
+         "preview": "helt.jpg",
+          "photos": ["photo1.jpg", "photo2.jpg", "photo3.jpg"]
     }
    
 
