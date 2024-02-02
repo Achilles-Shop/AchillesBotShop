@@ -74,104 +74,104 @@ const enableScroll = () => {
   window.scroll({ top: document.body.dbScrollY, });
 };
 
-// Запрос в базу данных
-const getData = async () => {
-  const data = await fetch('db.json');
-  if (data.ok) {
-    return data.json();
-  }
-  else {
-    throw new Error(`Данные не были получены ошибка ${data.status} ${data.statusText}`);
-  }
-};
+document.addEventListener('DOMContentLoaded', () => {
+  // Запрос в базу данных
+  const getData = async () => {
+    const data = await fetch('db.json');
+    if (data.ok) {
+      return data.json();
+    } else {
+      throw new Error(`Данные не были получены ошибка ${data.status} ${data.statusText}`);
+    }
+  };
 
-// Формирование товаров по категориям
-const getGoods = (callback, prop, value) => {
-  getData()
-  .then(data => {
-    if (value) {
-      callback(data.filter(item => item[prop] === value));
-    }
-    else {
-      callback(data);
-    }
-  })
-  .catch(err => {
-    console.error(err);
+  // Формирование товаров по категориям
+  const getGoods = (callback, prop, value) => {
+    getData()
+      .then(data => {
+        if (value) {
+          callback(data.filter(item => item[prop] === value));
+        } else {
+          callback(data);
+        }
+      })
+      .catch(err => {
+        console.error(err);
+      });
+  };
+
+  // Слушатели событий
+  headerCityButton.addEventListener('click', () => {
+    const city = prompt('Укажите ваш город!');
+    headerCityButton.textContent = city;
+    localStorage.setItem('urban-location', city);
   });
-};
 
-// Слушатели событий
-headerCityButton.addEventListener('click', () => {
-  const city = prompt('Укажите ваш город!');
-  headerCityButton.textContent = city;
-  localStorage.setItem('urban-location', city);
-});
+  subheaderCart.addEventListener('click', cartModalOpen);
+  cartOverlay.addEventListener('click', event => {
+    const target = event.target;
+    if (target.matches('.cart__btn-close') || target.matches('.cart-overlay')) {
+      cartModalClose();
+    }
+  });
 
-subheaderCart.addEventListener('click', cartModalOpen);
-cartOverlay.addEventListener('click', event => {
-  const target = event.target;
-  if (target.matches('.cart__btn-close') || target.matches('.cart-overlay')) {
-    cartModalClose();
-  }
-});
+  cartListGoods.addEventListener('click', e => {
+    if (e.target.matches('.btn-delete')) {
+      deleteItemCart(e.target.dataset.id);
+      renderCart();
+    }
+  });
 
-cartListGoods.addEventListener('click', e => {
-  if (e.target.matches('.btn-delete')) {
-    deleteItemCart(e.target.dataset.id);
-    renderCart();
-  }
-});
+  // Страница категорий товаров
+  try {
+    const goodsList = document.querySelector('.goods__list');
+    const goodsTitle = document.querySelector('.goods__title');
+    const changeTitle = () => {
+      goodsTitle.textContent = document.querySelector(`[href*="#${hash}"]`).textContent;
+    };
+    const createCard = ({ id, preview, cost, brand, name, sizes }) => {
+      const li = document.createElement('li');
+      li.classList.add('goods__item');
+      li.innerHTML = `
+      <article class="good">
+        <a class="good__link-img" href="card-good.html#${id}">
+          <img class="good__img" src="./images/goods-image/${preview}" alt="">
+        </a>
+        <div class="good__description">
+          <p class="good__price">${cost} &#8381;</p>
+          <h3 class="good__title">${brand} <span class="good__title__grey">/ ${name}</span></h3>
+          ${sizes ?
+            `<p class="good__sizes">Размеры (RUS): <span class="good__sizes-list">${sizes.join(' ')}</span></p>` :
+            ''}
+          <a class="good__link" href="card-good.html#${id}">Подробнее</a>
+        </div>
+      </article>
+      `;
+      return li;
+    };
 
-// Страница категорий товаров
-try {
-  const goodsList = document.querySelector('.goods__list');
-  const goodsTitle = document.querySelector('.goods__title');
-  const changeTitle = () => {
-    goodsTitle.textContent = document.querySelector(`[href*="#${hash}"]`).textContent;
-  };
-  const createCard = ({ id, preview, cost, brand, name, sizes }) => {
-    const li = document.createElement('li');
-    li.classList.add('goods__item');
-    li.innerHTML = `
-    <article class="good">
-      <a class="good__link-img" href="card-good.html#${id}">
-        <img class="good__img" src="./images/goods-image/${preview}" alt="">
-      </a>
-      <div class="good__description">
-        <p class="good__price">${cost} &#8381;</p>
-        <h3 class="good__title">${brand} <span class="good__title__grey">/ ${name}</span></h3>
-        ${sizes ?
-      `<p class="good__sizes">Размеры (RUS): <span class="good__sizes-list">${sizes.join(' ')}</span></p>` :
-      ''}
-        <a class="good__link" href="card-good.html#${id}">Подробнее</a>
-      </div>
-    </article>
-    `;
-    return li;
-  };
+    const renderGoodsList = data => {
+      goodsList.textContent = '';
+      data.forEach(item => {
+        const card = createCard(item);
+        goodsList.append(card);
+      });
+    };
 
-  const renderGoodsList = data => {
-    goodsList.textContent = '';
-    data.forEach(item => {
-      const card = createCard(item);
-      goodsList.append(card);
+    // Изменение содержимого при смене страниц
+    window.addEventListener('hashchange', () => {
+      hash = location.hash.substring(1);
+      getGoods(renderGoodsList, 'category', hash);
+      changeTitle();
     });
-  };
 
-  // Изменение содержимого при смене страниц
-  window.addEventListener('hashchange', () => {
-    hash = location.hash.substring(1);
     getGoods(renderGoodsList, 'category', hash);
     changeTitle();
-  });
+  } catch (err) {
+    console.warn(err);
+  }
+});
 
-  getGoods(renderGoodsList, 'category', hash);
-  changeTitle();
-}
-catch (err) {
-  console.warn(err);
-}
 
 // Страница товара
 try {
