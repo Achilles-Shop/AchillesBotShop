@@ -93,21 +93,6 @@ const getGoods = (callback, prop, value) => {
 
 // Слушатели событий
 
-subheaderCart.addEventListener('click', cartModalOpen);
-cartOverlay.addEventListener('click', event => {
-  const target = event.target;
-  if (target.matches('.cart__btn-close') || target.matches('.cart-overlay')) {
-    cartModalClose();
-  }
-});
-
-cartListGoods.addEventListener('click', e => {
-  if (e.target.matches('.btn-delete')) {
-    deleteItemCart(e.target.dataset.id);
-    renderCart();
-  }
-});
-
 // Страница категорий товаров
 try {
   const goodsList = document.querySelector('.goods__list');
