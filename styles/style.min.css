@@ -316,7 +316,7 @@ button {
 
 @media (max-width: 768px) {
     .promo__grid-item__small {
-        -ms-grid-column: 1;
+        -ms-grid-column: 2;
         -ms-grid-column-span: 1;
         grid-column: 1/2
     }
