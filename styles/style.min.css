@@ -286,7 +286,7 @@ button {
 
 .promo__grid-item__big {
     -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
@@ -301,16 +301,16 @@ button {
 
 .promo__grid-reverse-item__big {
     -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
     -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
+    -ms-grid-row-span: 1;
     grid-row: 1/2
 }
 
 .promo__grid-reverse-item__small {
     -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
+    -ms-grid-column-span: 1;
     grid-column: 1/2
 }
 
@@ -329,7 +329,7 @@ button {
 
     .promo__grid-reverse-item__big {
         -ms-grid-column: 2;
-        -ms-grid-column-span: 2;
+        -ms-grid-column-span: 1;
         grid-column: 1/2
     }
 
@@ -349,37 +349,37 @@ button {
 @media (max-width: 550px) {
     .promo__grid-item__big {
         -ms-grid-column: 2;
-        -ms-grid-column-span: 2;
+        -ms-grid-column-span: 1;
         grid-column: 1/2
     }
 
     .promo__grid-item__small {
         -ms-grid-column: 2;
-        -ms-grid-column-span: 2;
+        -ms-grid-column-span: 1;
         grid-column: 1/2
     }
 
     .promo__grid-item__small:nth-child(odd) {
         -ms-grid-column: 2;
-        -ms-grid-column-span: 2;
+        -ms-grid-column-span: 1;
         grid-column: 1/2
     }
 
     .promo__grid-reverse-item__big {
         -ms-grid-column: 2;
-        -ms-grid-column-span: 2;
+        -ms-grid-column-span: 1;
         grid-column: 1/2
     }
 
     .promo__grid-reverse-item__small {
         -ms-grid-column: 2;
-        -ms-grid-column-span: 2;
+        -ms-grid-column-span: 1;
         grid-column: 1/2
     }
 
     .promo__grid-reverse-item__small:nth-child(odd) {
         -ms-grid-column: 2;
-        -ms-grid-column-span: 2;
+        -ms-grid-column-span: 1;
         grid-column: 1/2
     }
 }
