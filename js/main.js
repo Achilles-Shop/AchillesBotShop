@@ -1,3 +1,15 @@
+document.addEventListener('DOMContentLoaded', () => {
+  // Весь ваш JavaScript-код должен быть внутри этого обработчика события
+
+  // Здесь вставьте предложенный код и остальной ваш JavaScript
+
+  const goodsList = document.querySelector('.goods__list');
+  const goodsTitle = document.querySelector('.goods__title');
+  const changeTitle = () => {
+    goodsTitle.textContent = document.querySelector(`[href*="#${hash}"]`).textContent;
+  };
+
+  
 // Введите ваш город
 const headerCityButton = document.querySelector('.header__city-button');
 const subheaderCart = document.querySelector('.subheader__cart');
@@ -262,3 +274,13 @@ try {
 catch (err) {
   console.warn(err);
 }
+
+                           window.addEventListener('hashchange', () => {
+    hash = location.hash.substring(1);
+    getGoods(renderGoodsList, 'category', hash);
+    changeTitle();
+  });
+
+  getGoods(renderGoodsList, 'category', hash);
+  changeTitle();
+});
