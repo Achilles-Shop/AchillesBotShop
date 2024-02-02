@@ -128,8 +128,15 @@ try {
   const goodsList = document.querySelector('.goods__list');
   const goodsTitle = document.querySelector('.goods__title');
   const changeTitle = () => {
-    goodsTitle.textContent = document.querySelector(`[href*="#${hash}"]`).textContent;
+    const hashElement = document.querySelector(`[href*="#${hash}"]`);
+
+    if (hashElement) {
+      goodsTitle.textContent = hashElement.textContent;
+    } else {
+      console.warn(`Элемент с хэшем #${hash} не был найден.`);
+    }
   };
+
   const createCard = ({ id, preview, cost, brand, name, sizes }) => {
     const li = document.createElement('li');
     li.classList.add('goods__item');
