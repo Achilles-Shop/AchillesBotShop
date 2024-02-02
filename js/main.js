@@ -1,7 +1,3 @@
-// Хэш элемент для изменения содержимого страниц
-let hash = location.hash.substring(1);
-
-headerCityButton.textContent = localStorage.getItem('urban-location') || 'Ваш город ?';
 
 // Функции для создании переменных в локал сторадж для корзины
 const getLocalStorage = () => JSON?.parse(localStorage.getItem('cart-urban')) || [];
