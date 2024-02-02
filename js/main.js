@@ -11,10 +11,28 @@ const getData = async () => {
   }
 };
 
+
+
+const getData = async () => {
+  try {
+    const data = await fetch('db.json');
+    if (data.ok) {
+      return data.json();
+    } else {
+      throw new Error(`Данные не были получены ошибка ${data.status} ${data.statusText}`);
+    }
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+
+
 // Формирование товаров по категориям
 const getGoods = (callback, prop, value) => {
   getData()
   .then(data => {
+         console.log(data); // Добавьте эту строку
     if (value) {
       callback(data.filter(item => item[prop] === value));
     }
