@@ -108,7 +108,7 @@ try {
     cardGoodBrand.textContent = brand;
     cardGoodTitle.textContent = name;
     cardGoodPrice.textContent = `${cost} ₽`;
-    cardGoodTitle.textContent = descr;
+    cardGoodDescr.textContent = descr;
     if (color) {
       cardGoodColor.textContent = color[0];
       cardGoodColor.dataset.id = 0;
