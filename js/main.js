@@ -99,6 +99,7 @@ try {
   const cardGoodBuy = document.querySelector('.card-good__buy');
 
   const generateList = data => data.reduce((html, item, i) =>
+  console.log({ id, brand, name, cost, descr, color, sizes, photo }); // Добавьте эту строку
   html + `<li class="card-good__select-item" data-id="${i}">${item}</li>`, '');
 
   const renderCardGood = ([{ id, brand, name, cost, descr, color, sizes, photo }]) => {
