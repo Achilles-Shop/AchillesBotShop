@@ -101,8 +101,8 @@ try {
   const generateList = data => data.reduce((html, item, i) =>
   html + `<li class="card-good__select-item" data-id="${i}">${item}</li>`, '');
 
-  const renderCardGood = ([{ id, brand, name, cost, descr, color, sizes, photo }]) => {
-    const data = { brand, name, cost, descr, id };
+  const renderCardGood = ([{ id, brand, name, cost, descr, color, sizes, photos }]) => {
+  const data = { brand, name, cost, descr, id, photos };
     cardGoodImage.src = `./images/goods-image/${photo}`;
     cardGoodImage.alt = `${brand} ${name}`;
     cardGoodBrand.textContent = brand;
@@ -155,6 +155,37 @@ try {
     });
   };
 
+
+
+  
+
+   // Вызываем updateSliderImage при загрузке страницы
+  updateSliderImage(photos[0]);
+
+// Добавляем обработчики событий для кнопок "Next" и "Prev"
+  document.querySelector('.card-good__slider-btn-prev').addEventListener('click', () => prevImage(photos));
+  document.querySelector('.card-good__slider-btn-next').addEventListener('click', () => nextImage(photos));
+};
+
+// Функция для обновления изображения в слайдере
+function updateSliderImage(photo) {
+  cardGoodImage.src = `./images/goods-image/${photo}`;
+  cardGoodImage.alt = `${cardGoodBrand.textContent} ${cardGoodTitle.textContent}`;
+}
+// Функция для переключения к предыдущему изображению в слайдере
+function prevImage(photos) {
+  const currentIndex = photos.indexOf(cardGoodImage.src.split('/').pop());
+  const prevIndex = (currentIndex - 1 + photos.length) % photos.length;
+  updateSliderImage(photos[prevIndex]);
+}
+// Функция для переключения к следующему изображению в слайдере
+function nextImage(photos) {
+  const currentIndex = photos.indexOf(cardGoodImage.src.split('/').pop());
+  const nextIndex = (currentIndex + 1) % photos.length;
+  updateSliderImage(photos[nextIndex]);
+}
+
+  
   cardGoodSelectWrapper.forEach(item => {
     item.addEventListener('click', e => {
       const target = e.target;
@@ -176,34 +207,3 @@ catch (err) {
   console.warn(err);
 }
 
-
-
-
-// Функция для обновления изображения в слайдере
-function updateSliderImage(photo) {
-  cardGoodImage.src = `./images/goods-image/${photo}`;
-  cardGoodImage.alt = `${cardGoodBrand.textContent} ${cardGoodTitle.textContent}`;
-}
-
-// Функция для переключения к предыдущему изображению в слайдере
-function prevImage() {
-  const currentProduct = products.find(item => item.id === hash);
-  const currentIndex = currentProduct ? currentProduct.photo.indexOf(cardGoodImage.src.split('/').pop()) : 0;
-  const prevIndex = (currentIndex - 1 + currentProduct.photo.length) % currentProduct.photo.length;
-  updateSliderImage(currentProduct.photo[prevIndex]);
-}
-
-// Функция для переключения к следующему изображению в слайдере
-function nextImage() {
-  const currentProduct = products.find(item => item.id === hash);
-  const currentIndex = currentProduct ? currentProduct.photo.indexOf(cardGoodImage.src.split('/').pop()) : 0;
-  const nextIndex = (currentIndex + 1) % currentProduct.photo.length;
-  updateSliderImage(currentProduct.photo[nextIndex]);
-}
-
-// Вызываем updateSliderImage при загрузке страницы
-updateSliderImage('');
-
-// Добавляем обработчики событий для кнопок "Next" и "Prev"
-document.querySelector('.card-good__slider-btn-prev').addEventListener('click', prevImage);
-document.querySelector('.card-good__slider-btn-next').addEventListener('click', nextImage);
