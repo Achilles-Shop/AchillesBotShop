@@ -326,7 +326,7 @@ button {
     margin-bottom: 30px
 }
 
-@media (max-width: 480px) {
+@media (max-width: 228px) {
     .goods__title {
         text-align: center
     }
@@ -354,7 +354,7 @@ button {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 228px) {
     .goods__list {
         -ms-grid-columns: 1fr;
         grid-template-columns:1fr
@@ -384,7 +384,7 @@ button {
     box-shadow: 0px 0px 5px #aaa
 }
 
-@media (max-width: 480px) {
+@media (max-width: 228px) {
     .good {
         max-width: 320px
     }
