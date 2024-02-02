@@ -2,18 +2,6 @@ let hash = window.location.hash.substring(1);
 
 // Запрос в базу данных
 const getData = async () => {
-  const data = await fetch('db.json');
-  if (data.ok) {
-    return data.json();
-  }
-  else {
-    throw new Error(`Данные не были получены ошибка ${data.status} ${data.statusText}`);
-  }
-};
-
-
-
-const getData = async () => {
   try {
     const data = await fetch('db.json');
     if (data.ok) {
@@ -26,25 +14,21 @@ const getData = async () => {
   }
 };
 
-
-
 // Формирование товаров по категориям
 const getGoods = (callback, prop, value) => {
   getData()
-  .then(data => {
-         console.log(data); // Добавьте эту строку
-    if (value) {
-      callback(data.filter(item => item[prop] === value));
-    }
-    else {
-      callback(data);
-    }
-  })
-  .catch(err => {
-    console.error(err);
-  });
+    .then(data => {
+      console.log(data); // Добавьте эту строку
+      if (value) {
+        callback(data.filter(item => item[prop] === value));
+      } else {
+        callback(data);
+      }
+    })
+    .catch(err => {
+      console.error(err);
+    });
 };
-
 
 // Страница категорий товаров
 try {
@@ -57,19 +41,19 @@ try {
     const li = document.createElement('li');
     li.classList.add('goods__item');
     li.innerHTML = `
-    <article class="good">
-      <a class="good__link-img" href="card-good.html#${id}">
-        <img class="good__img" src="./images/goods-image/${preview}" alt="">
-      </a>
-      <div class="good__description">
-        <p class="good__price">${cost} &#8381;</p>
-        <h3 class="good__title">${brand} <span class="good__title__grey">/ ${name}</span></h3>
-        ${sizes ?
-      `<p class="good__sizes">Размеры (RUS): <span class="good__sizes-list">${sizes.join(' ')}</span></p>` :
-      ''}
-        <a class="good__link" href="card-good.html#${id}">Подробнее</a>
-      </div>
-    </article>
+      <article class="good">
+        <a class="good__link-img" href="card-good.html#${id}">
+          <img class="good__img" src="./images/goods-image/${preview}" alt="">
+        </a>
+        <div class="good__description">
+          <p class="good__price">${cost} &#8381;</p>
+          <h3 class="good__title">${brand} <span class="good__title__grey">/ ${name}</span></h3>
+          ${sizes ?
+            `<p class="good__sizes">Размеры (RUS): <span class="good__sizes-list">${sizes.join(' ')}</span></p>` :
+            ''}
+          <a class="good__link" href="card-good.html#${id}">Подробнее</a>
+        </div>
+      </article>
     `;
     return li;
   };
@@ -91,8 +75,7 @@ try {
 
   getGoods(renderGoodsList, 'category', hash);
   changeTitle();
-}
-catch (err) {
+} catch (err) {
   console.warn(err);
 }
 
@@ -110,7 +93,7 @@ try {
   const cardGoodBuy = document.querySelector('.card-good__buy');
 
   const generateList = data => data.reduce((html, item, i) =>
-  html + `<li class="card-good__select-item" data-id="${i}">${item}</li>`, '');
+    html + `<li class="card-good__select-item" data-id="${i}">${item}</li>`, '');
 
   const renderCardGood = ([{ id, brand, name, cost, color, sizes, photo }]) => {
     const data = { brand, name, cost, id };
@@ -123,16 +106,14 @@ try {
       cardGoodColor.textContent = color[0];
       cardGoodColor.dataset.id = 0;
       cardGoodColorList.innerHTML = generateList(color);
-    }
-    else {
+    } else {
       cardGoodColor.style.display = 'none';
     }
     if (sizes) {
       cardGoodSizes.textContent = sizes[0];
       cardGoodSizes.dataset.id = 0;
       cardGoodSizesList.innerHTML = generateList(sizes);
-    }
-    else{
+    } else {
       cardGoodSizes.style.display = 'none';
     }
 
@@ -150,18 +131,17 @@ try {
       }
       if (color) {
         data.color = cardGoodColor.textContent;
-      } 
+      }
       if (sizes) {
         data.size = cardGoodSizes.textContent;
       }
 
       cardGoodBuy.classList.add('delete');
       cardGoodBuy.textContent = 'Удалить из корзины';
-      
+
       const cardData = getLocalStorage();
       cardData.push(data);
       setLocalStorage(cardData);
-
     });
   };
 
@@ -181,7 +161,6 @@ try {
   });
 
   getGoods(renderCardGood, 'id', hash);
-}
-catch (err) {
+} catch (err) {
   console.warn(err);
 }
