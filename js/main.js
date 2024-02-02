@@ -92,11 +92,6 @@ const getGoods = (callback, prop, value) => {
 };
 
 // Слушатели событий
-headerCityButton.addEventListener('click', () => {
-  const city = prompt('Укажите ваш город!');
-  headerCityButton.textContent = city;
-  localStorage.setItem('urban-location', city);
-});
 
 subheaderCart.addEventListener('click', cartModalOpen);
 cartOverlay.addEventListener('click', event => {
