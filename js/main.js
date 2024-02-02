@@ -1,78 +1,9 @@
-// Введите ваш город
-const headerCityButton = document.querySelector('.header__city-button');
-const subheaderCart = document.querySelector('.subheader__cart');
-const cartOverlay = document.querySelector('.cart-overlay');
-const cartListGoods = document.querySelector('.cart__list-goods');
-const cartTotalCost = document.querySelector('.cart__total-cost');
+
 // Хэш элемент для изменения содержимого страниц
 let hash = location.hash.substring(1);
 
 headerCityButton.textContent = localStorage.getItem('urban-location') || 'Ваш город ?';
 
-// Функции для создании переменных в локал сторадж для корзины
-const getLocalStorage = () => JSON?.parse(localStorage.getItem('cart-urban')) || [];
-const setLocalStorage = data => localStorage.setItem('cart-urban', JSON.stringify(data));
-
-// Формирование корзины
-const renderCart = () => {
-  cartListGoods.textContent = '';
-  const cartItems = getLocalStorage();
-  let totalPrice = 0;
-
-  cartItems.forEach((item, i) => {
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-        <td>${i+1}</td>
-        <td>${item.brand} ${item.name}</td>
-        ${item.color ? `<td>${item.color}</td>` : `<td>-</td>`}
-        ${item.size ?  `<td>${item.size}</td>` : `<td>-</td>`}
-        <td>${item.cost} &#8381;</td>
-        <td><button class="btn-delete" data-id="${item.id}">&times;</button></td>
-    `;
-    totalPrice += item.cost;
-    cartListGoods.append(tr);
-  });
-
-  cartTotalCost.textContent = totalPrice + ' ₽';
-};
-
-const deleteItemCart = id => {
-  const cartItems = getLocalStorage();
-  const newCartItems = cartItems.filter(item => item.id !== id);
-  setLocalStorage(newCartItems);
-};
-
-// Открытие и закрытие модального окна корзины
-const cartModalOpen = () => {
-  cartOverlay.classList.add('cart-overlay-open');
-  disableScroll();
-  renderCart();
-};
-const cartModalClose = () => {
-  cartOverlay.classList.remove('cart-overlay-open');
-  enableScroll();
-};
-
-// Блокировка скролла при открытии модального окна
-const disableScroll = () => {
-  const widthScroll = window.innerWidth - document.body.offsetWidth;
-  document.body.dbScrollY = window.scrollY;
-  document.body.style.cssText = `
-  position: fixed;
-  top: ${-window.scrollY}px;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  padding-right: ${widthScroll}px;
-  `;
-};
-
-// Отмены блокировки скролла
-const enableScroll = () => {
-  document.body.style.cssText = '';
-  window.scroll({ top: document.body.dbScrollY, });
-};
 
 // Запрос в базу данных
 const getData = async () => {
