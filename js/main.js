@@ -1,4 +1,4 @@
-
+let hash = window.location.hash.substring(1);
 
 // Запрос в базу данных
 const getData = async () => {
