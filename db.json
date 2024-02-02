@@ -16,7 +16,9 @@
             "3"
         ],
         "photo": "cut.jpg",
-        "preview": "cut.jpg"
+         "photo": "helt.jpg",
+         "photo": "cut.jpg",
+        "preview": "helt.jpg"
     },
     {
         "id": "CD32D6F8",
