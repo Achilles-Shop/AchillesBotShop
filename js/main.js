@@ -1,4 +1,4 @@
-
+let hash = window.location.hash.substring(1);
 // Функции для создании переменных в локал сторадж для корзины
 const getLocalStorage = () => JSON?.parse(localStorage.getItem('cart-urban')) || [];
 const setLocalStorage = data => localStorage.setItem('cart-urban', JSON.stringify(data));
