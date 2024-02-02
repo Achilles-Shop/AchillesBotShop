@@ -177,8 +177,7 @@ catch (err) {
 }
 
 
-// Хэш элемент для изменения содержимого страниц
-let hash = location.hash.substring(1);
+
 
 // Функция для обновления изображения в слайдере
 function updateSliderImage(photo) {
