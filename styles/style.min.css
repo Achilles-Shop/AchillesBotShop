@@ -397,6 +397,12 @@ button {
     text-align: left
 }
 
+.good__descr {
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: left
+}
+
 .good__title {
     font-weight: 400;
     margin-bottom: 10px;
