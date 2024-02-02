@@ -103,7 +103,7 @@ try {
 
   const renderCardGood = ([{ id, brand, name, cost, descr, color, sizes, photos }]) => {
   const data = { brand, name, cost, descr, id, photos };
-    cardGoodImage.src = `./images/goods-image/${photo}`;
+  cardGoodImage.src = `./images/goods-image/${photos[0]}`; // Используйте photos[0] или другой индекс по вашему выбору
     cardGoodImage.alt = `${brand} ${name}`;
     cardGoodBrand.textContent = brand;
     cardGoodTitle.textContent = name;
