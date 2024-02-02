@@ -90,6 +90,7 @@ try {
   const cardGoodBrand = document.querySelector('.card-good__brand');
   const cardGoodTitle = document.querySelector('.card-good__title');
   const cardGoodPrice = document.querySelector('.card-good__price');
+  const cardGoodDescr = document.querySelector('.card-good__descr');
   const cardGoodColor = document.querySelector('.card-good__color');
   const cardGoodSelectWrapper = document.querySelectorAll('.card-good__select__wrapper');
   const cardGoodColorList = document.querySelector('.card-good__color-list');
@@ -100,13 +101,14 @@ try {
   const generateList = data => data.reduce((html, item, i) =>
   html + `<li class="card-good__select-item" data-id="${i}">${item}</li>`, '');
 
-  const renderCardGood = ([{ id, brand, name, cost, color, sizes, photo }]) => {
-    const data = { brand, name, cost, id };
+  const renderCardGood = ([{ id, brand, name, cost, descr, color, sizes, photo }]) => {
+    const data = { brand, name, cost, descr, id };
     cardGoodImage.src = `./images/goods-image/${photo}`;
     cardGoodImage.alt = `${brand} ${name}`;
     cardGoodBrand.textContent = brand;
     cardGoodTitle.textContent = name;
     cardGoodPrice.textContent = `${cost} ₽`;
+    cardGoodTitle.textContent = descr;
     if (color) {
       cardGoodColor.textContent = color[0];
       cardGoodColor.dataset.id = 0;
