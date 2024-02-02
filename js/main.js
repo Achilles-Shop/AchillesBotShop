@@ -126,6 +126,14 @@ try {
       cardGoodSizes.style.display = 'none';
     }
 
+      // Вызываем updateSliderImage при загрузке страницы
+  updateSliderImage(photos[0]);
+
+// Добавляем обработчики событий для кнопок "Next" и "Prev"
+  document.querySelector('.card-good__slider-btn-prev').addEventListener('click', () => prevImage(photos));
+  document.querySelector('.card-good__slider-btn-next').addEventListener('click', () => nextImage(photos));
+};
+
     if (getLocalStorage().some(item => item.id === id)) {
       cardGoodBuy.classList.add('delete');
       cardGoodBuy.textContent = 'Удалить из корзины';
@@ -156,35 +164,6 @@ try {
   };
 
 
-
-  
-
-   // Вызываем updateSliderImage при загрузке страницы
-  updateSliderImage(photos[0]);
-
-// Добавляем обработчики событий для кнопок "Next" и "Prev"
-  document.querySelector('.card-good__slider-btn-prev').addEventListener('click', () => prevImage(photos));
-  document.querySelector('.card-good__slider-btn-next').addEventListener('click', () => nextImage(photos));
-};
-
-// Функция для обновления изображения в слайдере
-function updateSliderImage(photo) {
-  cardGoodImage.src = `./images/goods-image/${photo}`;
-  cardGoodImage.alt = `${cardGoodBrand.textContent} ${cardGoodTitle.textContent}`;
-}
-// Функция для переключения к предыдущему изображению в слайдере
-function prevImage(photos) {
-  const currentIndex = photos.indexOf(cardGoodImage.src.split('/').pop());
-  const prevIndex = (currentIndex - 1 + photos.length) % photos.length;
-  updateSliderImage(photos[prevIndex]);
-}
-// Функция для переключения к следующему изображению в слайдере
-function nextImage(photos) {
-  const currentIndex = photos.indexOf(cardGoodImage.src.split('/').pop());
-  const nextIndex = (currentIndex + 1) % photos.length;
-  updateSliderImage(photos[nextIndex]);
-}
-
   
   cardGoodSelectWrapper.forEach(item => {
     item.addEventListener('click', e => {
@@ -207,3 +186,21 @@ catch (err) {
   console.warn(err);
 }
 
+
+// Функция для обновления изображения в слайдере
+function updateSliderImage(photo) {
+  cardGoodImage.src = `./images/goods-image/${photo}`;
+  cardGoodImage.alt = `${cardGoodBrand.textContent} ${cardGoodTitle.textContent}`;
+}
+// Функция для переключения к предыдущему изображению в слайдере
+function prevImage(photos) {
+  const currentIndex = photos.indexOf(cardGoodImage.src.split('/').pop());
+  const prevIndex = (currentIndex - 1 + photos.length) % photos.length;
+  updateSliderImage(photos[prevIndex]);
+}
+// Функция для переключения к следующему изображению в слайдере
+function nextImage(photos) {
+  const currentIndex = photos.indexOf(cardGoodImage.src.split('/').pop());
+  const nextIndex = (currentIndex + 1) % photos.length;
+  updateSliderImage(photos[nextIndex]);
+}
