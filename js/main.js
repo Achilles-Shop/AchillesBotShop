@@ -1,3 +1,28 @@
+const changeTitle = () => {
+  const titleElement = document.querySelector('.goods__title');
+  if (titleElement) {
+    titleElement.textContent = document.querySelector(`[href*="#${hash}"]`).textContent;
+  }
+};
+
+const renderGoodsList = data => {
+  const goodsList = document.querySelector('.goods__list');
+  if (goodsList) {
+    goodsList.textContent = '';
+    data.forEach(item => {
+      const card = createCard(item);
+      goodsList.append(card);
+    });
+  }
+};
+
+const renderCardGood = ([{ id, brand, name, cost, color, sizes, photo }]) => {
+  const cardGoodImage = document.querySelector('.card-good__image');
+  if (cardGoodImage) {
+    cardGoodImage.src = `./images/goods-image/${photo}`;
+    cardGoodImage.alt = `${brand} ${name}`;
+  }
+
 let hash = window.location.hash.substring(1);
 // Функции для создании переменных в локал сторадж для корзины
 const getLocalStorage = () => JSON?.parse(localStorage.getItem('cart-urban')) || [];
@@ -232,3 +257,4 @@ try {
 catch (err) {
   console.warn(err);
 }
+};
