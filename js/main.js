@@ -2,7 +2,7 @@
 // Хэш элемент для изменения содержимого страниц
 let hash = location.hash.substring(1);
 
-headerCityButton.textContent = localStorage.getItem('urban-location') || 'Ваш город ?';
+
 
 
 // Запрос в базу данных
