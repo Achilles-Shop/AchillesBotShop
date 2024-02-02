@@ -4,6 +4,12 @@ let hash = location.hash.substring(1);
 
 
 
+// Импорт стилей Swiper
+import 'swiper/swiper-bundle.min.css';
+
+// Импорт Swiper и его стилей
+import Swiper from 'swiper/swiper-bundle.min.js';
+
 
 // Запрос в базу данных
 const getData = async () => {
@@ -97,11 +103,12 @@ try {
   const cardGoodSizes = document.querySelector('.card-good__sizes');
   const cardGoodSizesList = document.querySelector('.card-good__sizes-list');
   const cardGoodBuy = document.querySelector('.card-good__buy');
+  const cardGoodImages = photos.map(photo => `<div class="swiper-slide"><img src="./images/goods-image/${photo}" alt="${brand} ${name}"></div>`).join('');
 
   const generateList = data => data.reduce((html, item, i) =>
   html + `<li class="card-good__select-item" data-id="${i}">${item}</li>`, '');
 
-  const renderCardGood = ([{ id, brand, name, cost, descr, color, sizes, photo }]) => {
+  const renderCardGood = ([{ id, brand, name, cost, descr, color, sizes, photos }]) => {
     const data = { brand, name, cost, descr, id };
     cardGoodImage.src = `./images/goods-image/${photo}`;
     cardGoodImage.alt = `${brand} ${name}`;
@@ -109,6 +116,7 @@ try {
     cardGoodTitle.textContent = name;
     cardGoodPrice.textContent = `${cost} ₽`;
     cardGoodDescr.textContent = descr;
+    cardGoodImage.innerHTML = cardGoodImages;
     if (color) {
       cardGoodColor.textContent = color[0];
       cardGoodColor.dataset.id = 0;
@@ -175,3 +183,12 @@ try {
 catch (err) {
   console.warn(err);
 }
+
+ // Инициализация Swiper
+  const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
