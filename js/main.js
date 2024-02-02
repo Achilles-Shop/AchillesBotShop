@@ -157,7 +157,7 @@ try {
       cardData.push(data);
       setLocalStorage(cardData);
     });
-  };
+  
 
   cardGoodSelectWrapper.forEach(item => {
     item.addEventListener('click', e => {
