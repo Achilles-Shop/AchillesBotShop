@@ -56,3 +56,62 @@
     }
    
 ]
+
+[
+    {
+        "id": "4",
+        "category": "kids",
+        "brand": "EDC",
+        "name": "Ножницы",
+        "cost": 85,
+        "color": [
+            "Зеленые",
+            "Оранжевые"
+        ],
+        "sizes": [
+            "1",
+            "2",
+            "3"
+        ],
+        "photo": "cut.jpg",
+        "preview": "cut.jpg"
+    },
+    {
+        "id": "3",
+        "category": "women",
+        "brand": "Achilles",
+        "name": "Подсумки под станцию",
+        "cost": 135,
+        "color": [
+            "Олива",
+            "черный",
+            "Койот"
+        ],
+        "sizes": [
+            "1",
+            "2"
+        ],
+        "photo": "helt.jpg",
+        "preview": "helt.jpg"
+    },
+    {
+        "id": "2",
+        "category": "men",
+        "brand": "Achilles",
+        "name": "Минимап",
+        "cost": 1000,
+        "color": [
+            "Олива",
+            "черный",
+            "Койот"
+        ],
+        "sizes": [
+            "1",
+            "2",
+            "3"
+        ],
+        "photo": "Back.jpg",
+        "preview": "Back.jpg"
+    }
+   
+]
