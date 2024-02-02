@@ -1,9 +1,3 @@
-// Введите ваш город
-const headerCityButton = document.querySelector('.header__city-button');
-const subheaderCart = document.querySelector('.subheader__cart');
-const cartOverlay = document.querySelector('.cart-overlay');
-const cartListGoods = document.querySelector('.cart__list-goods');
-const cartTotalCost = document.querySelector('.cart__total-cost');
 // Хэш элемент для изменения содержимого страниц
 let hash = location.hash.substring(1);
 
