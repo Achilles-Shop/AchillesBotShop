@@ -50,10 +50,10 @@ try {
         <img class="good__img" src="./images/goods-image/${preview}" alt="">
       </a>
       <div class="good__description">
-        <p class="good__price">${cost} &#8381;</p>
+        <p class="good__price">${cost} RUB;</p>
         <h3 class="good__title">${brand} <span class="good__title__grey">/ ${name}</span></h3>
         ${sizes ?
-      `<p class="good__sizes">Размеры (RUS): <span class="good__sizes-list">${sizes.join(' ')}</span></p>` :
+      `<p class="good__sizes">Размеры: <span class="good__sizes-list">${sizes.join(' ')}</span></p>` :
       ''}
         <a class="good__link" href="card-good.html#${id}">Подробнее</a>
       </div>
@@ -107,7 +107,7 @@ try {
     cardGoodImage.alt = `${brand} ${name}`;
     cardGoodBrand.textContent = brand;
     cardGoodTitle.textContent = name;
-    cardGoodPrice.textContent = `${cost} P`;
+    cardGoodPrice.textContent = `${cost} RUB`;
     cardGoodDescr.textContent = descr;
     if (color) {
       cardGoodColor.textContent = color[0];
