@@ -50,7 +50,7 @@ try {
         <img class="good__img" src="./images/goods-image/${preview}" alt="">
       </a>
       <div class="good__description">
-        <p class="good__price">${cost} RUB;</p>
+        <p class="good__price">${cost} RUB</p>
         <h3 class="good__title">${brand} <span class="good__title__grey">/ ${name}</span></h3>
         ${sizes ?
       `<p class="good__sizes">Размеры: <span class="good__sizes-list">${sizes.join(' ')}</span></p>` :
