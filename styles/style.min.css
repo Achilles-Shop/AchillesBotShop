@@ -231,13 +231,6 @@ button {
     gap: 15px
 }
 
-@media (max-width: 768px) {
-    .navigation__list {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center
-    }
-}
 
 .promo__grid-image {
     width: 100%;
