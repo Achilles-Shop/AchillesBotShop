@@ -107,7 +107,7 @@ try {
     cardGoodImage.alt = `${brand} ${name}`;
     cardGoodBrand.textContent = brand;
     cardGoodTitle.textContent = name;
-    cardGoodPrice.textContent = `${cost} ₽`;
+    cardGoodPrice.textContent = `${cost} P`;
     cardGoodDescr.textContent = descr;
     if (color) {
       cardGoodColor.textContent = color[0];
