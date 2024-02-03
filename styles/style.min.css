@@ -134,56 +134,7 @@ button {
 
 
 
-/* Стили для Swiper-контейнера */
-.swiper-container {
-  width: 100%; /* Ширина контейнера по ширине родителя */
-  height: auto; /* Высота контейнера автоматически подстраивается под содержимое */
-  position: relative; /* Позиционирование контейнера */
-}
 
-/* Стили для Swiper-обертки */
-.swiper-wrapper {
-  display: flex; /* Отображение элементов в ряд */
-  transition: transform 0.3s ease; /* Плавный переход для анимации переключения слайдов */
-}
-
-/* Стили для кнопок навигации */
-.swiper-button-next,
-.swiper-button-prev {
-  position: absolute; /* Позиционирование абсолютное */
-  top: 50%; /* Верхняя граница находится посередине контейнера */
-  width: 30px; /* Ширина кнопок */
-  height: 30px; /* Высота кнопок */
-  margin-top: -15px; /* Выравнивание по вертикали */
-  background-color: #fff; /* Цвет фона кнопок */
-  border: 1px solid #ccc; /* Граница кнопок */
-  border-radius: 50%; /* Скругление углов для круглых кнопок */
-  cursor: pointer; /* Изменение курсора при наведении */
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  content: ""; /* Пустое содержимое */
-  display: inline-block; /* Отображение как блок */
-  width: 12px; /* Ширина стрелочек */
-  height: 12px; /* Высота стрелочек */
-  background-image: url('путь_к_изображению'); /* Путь к изображению стрелочек */
-  background-size: contain; /* Растягивание изображения, чтобы оно поместилось в блок */
-  background-repeat: no-repeat; /* Запрет повторения фона */
-}
-
-.swiper-button-next {
-  right: 10px; /* Расположение кнопки "Вперёд" справа */
-}
-
-.swiper-button-prev {
-  left: 10px; /* Расположение кнопки "Назад" слева */
-}
-
-/* Стили для активных слайдов */
-.swiper-slide-active {
-  opacity: 1; /* Показывать активные слайды без прозрачности */
-}
 
 
 
