@@ -15,14 +15,14 @@
             "2",
             "3"
         ],
-        "photo": "cut.jpg",
-        "preview": "cut.jpg"
+        "photo": "EDCcut2.jpg",
+        "preview": "EDCcut2.jpg"
     },
     {
         "id": "CD32D6F8",
         "category": "women",
         "brand": "Achilles",
-        "name": "Подсумки под станцию",
+        "name": "Подсумок под магазин",
         "cost": 135,
         "descr": "Описание",
         "color": [
@@ -34,14 +34,14 @@
             "1",
             "2"
         ],
-        "photo": "helt.jpg",
-        "preview": "helt.jpg"
+        "photo": "Podsumok1.jpg",
+        "preview": "Podsumok1.jpg"
     },
     {
         "id": "1ACC55DD",
         "category": "men",
         "brand": "Achilles",
-        "name": "Минимап",
+        "name": "Рюкзак",
         "cost": 1000,
         "descr": "Описание",
         "color": [
@@ -54,8 +54,8 @@
             "2",
             "3"
         ],
-        "photo": "Back.jpg",
-        "preview": "Back.jpg"
+        "photo": "Backpack1.jpg",
+        "preview": "Backpack1.jpg"
     },
    
 
@@ -65,7 +65,7 @@
         "id": "4",
         "category": "kids",
         "brand": "EDC",
-        "name": "Ножниwqцы",
+        "name": "Пряжка",
         "cost": 865,
         "descr": "Описание",
         "color": [
@@ -77,14 +77,14 @@
             "2",
             "3"
         ],
-        "photo": "cut.jpg",
-        "preview": "cut.jpg"
+        "photo": "watis.jpg",
+        "preview": "watis.jpg"
     },
     {
         "id": "3",
         "category": "women",
         "brand": "Achilles",
-        "name": "Подсумки qwпод станцию",
+        "name": "Подсумок под магазин",
         "cost": 1354,
         "descr": "Описание",
         "color": [
@@ -96,14 +96,14 @@
             "1",
             "2"
         ],
-        "photo": "helt.jpg",
-        "preview": "helt.jpg"
+        "photo": "Podsumok2.jpg",
+        "preview": "Podsumok2.jpg"
     },
     {
         "id": "2",
         "category": "men",
         "brand": "Achilles",
-        "name": "Минимqweап",
+        "name": "Рюкзак",
         "cost": 10020,
         "descr": "Описание",
         "color": [
@@ -116,8 +116,8 @@
             "2",
             "3"
         ],
-        "photo": "Back.jpg",
-        "preview": "Back.jpg"
+        "photo": "Backpack2.jpg",
+        "preview": "Backpack2.jpg"
     }
    
 ]
