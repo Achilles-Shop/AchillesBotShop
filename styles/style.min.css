@@ -1002,3 +1002,13 @@ button {
 .footer__icon-huaweistore {
     background-image: url(../images/svg/footer__icon-huaweistore.svg)
 }
+
+.swiper {
+    width: 300px;
+    height: 300px;
+  }
+
+.card-good__slider{
+    max-width: 100%;
+    overflow: hidden;
+  }

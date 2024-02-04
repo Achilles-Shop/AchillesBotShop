@@ -1,4 +1,7 @@
 
+
+document.addEventListener('DOMContentLoaded', function () {
+
 // Хэш элемент для изменения содержимого страниц
 let hash = location.hash.substring(1);
 
@@ -97,62 +100,74 @@ try {
   const cardGoodSizes = document.querySelector('.card-good__sizes');
   const cardGoodSizesList = document.querySelector('.card-good__sizes-list');
   const cardGoodBuy = document.querySelector('.card-good__buy');
+  const cardGoodSlider = document.querySelector('.card-good__slider');
 
   const generateList = data => data.reduce((html, item, i) =>
-  html + `<li class="card-good__select-item" data-id="${i}">${item}</li>`, '');
+    html + `<li class="card-good__select-item" data-id="${i}">${item}</li>`, '');
 
-  const renderCardGood = ([{ id, brand, name, cost, descr, color, sizes, photo }]) => {
+
+
+// Изменения для подключения Swiper
+document.addEventListener('DOMContentLoaded', function () {
+  // Инициализация Swiper
+  const mySwiper = new Swiper('.card-good__slider', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    direction: 'vertical',
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+       prevEl: '.swiper-button-prev',
+    },
+  });
+});
+
+  const renderCardGood = ([{ id, brand, name, cost, descr, color, sizes, photos }]) => {
     const data = { brand, name, cost, descr, id };
-    cardGoodImage.src = `./images/goods-image/${photo}`;
     cardGoodImage.alt = `${brand} ${name}`;
     cardGoodBrand.textContent = brand;
     cardGoodTitle.textContent = name;
     cardGoodPrice.textContent = `${cost} RUB`;
     cardGoodDescr.textContent = descr;
+
+    // Отображение слайдера
+    const slidesHtml = photos.map(photo => `
+    <div class="swiper-slide">
+      <img src="./images/goods-image/${photo}">
+    </div>
+  `);
+
+  const sliderHtml = `
+    <div class="card-good__slider swiper-container">
+      <div class="swiper-wrapper">
+        ${slidesHtml.join('')}
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  `;
+    cardGoodSlider.innerHTML = sliderHtml;
+ // Отображение слайдера
+
+
+
+
     if (color) {
       cardGoodColor.textContent = color[0];
       cardGoodColor.dataset.id = 0;
       cardGoodColorList.innerHTML = generateList(color);
-    }
-    else {
+    } else {
       cardGoodColor.style.display = 'none';
     }
     if (sizes) {
       cardGoodSizes.textContent = sizes[0];
       cardGoodSizes.dataset.id = 0;
       cardGoodSizesList.innerHTML = generateList(sizes);
-    }
-    else{
+    } else {
       cardGoodSizes.style.display = 'none';
     }
 
-    if (getLocalStorage().some(item => item.id === id)) {
-      cardGoodBuy.classList.add('delete');
-      cardGoodBuy.textContent = 'Удалить из корзины';
-    }
-
-    cardGoodBuy.addEventListener('click', () => {
-      if (cardGoodBuy.classList.contains('delete')) {
-        deleteItemCart(id);
-        cardGoodBuy.classList.remove('delete');
-        cardGoodBuy.textContent = 'Добавить в корзину';
-        return;
-      }
-      if (color) {
-        data.color = cardGoodColor.textContent;
-      } 
-      if (sizes) {
-        data.size = cardGoodSizes.textContent;
-      }
-
-      cardGoodBuy.classList.add('delete');
-      cardGoodBuy.textContent = 'Удалить из корзины';
-      
-      const cardData = getLocalStorage();
-      cardData.push(data);
-      setLocalStorage(cardData);
-
-    });
+  
   };
 
   cardGoodSelectWrapper.forEach(item => {
@@ -161,17 +176,13 @@ try {
       if (target.closest('.card-good__select')) {
         target.classList.toggle('card-good__select__open');
       }
-      if (target.closest('.card-good__select-item')) {
-        const cardGoodSelect = item.querySelector('.card-good__select');
-        cardGoodSelect.textContent = target.textContent;
-        cardGoodSelect.dataset.id = target.dataset.id;
-        cardGoodSelect.classList.remove('card-good__select__open');
-      }
+      
     });
   });
 
+  
   getGoods(renderCardGood, 'id', hash);
-}
-catch (err) {
+} catch (err) {
   console.warn(err);
 }
+});
