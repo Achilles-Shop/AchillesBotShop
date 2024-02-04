@@ -1,7 +1,25 @@
 [
     {
         "id": "1",
-        "category": "kids",
+        "category": "Backpacks",
+        "brand": "EDC",
+        "name": "Ножницы",
+        "cost": 85,
+        "descr": "Mission Pack MK II – это универсальный военный рюкзак среднего объема. Он обладает прекрасным внешним видом, а также отличной организацией распределения груза, которая достигается за счет наличия большого количества эластичных слотов на внутренней части основного отделения и съемных сумок со стенками из прозрачного пластика. На фронтальной части и по бокам рюкзака есть интерфейс MOLLE, образованный путем лазерной резки.",
+        "color": ["Зеленые", "Оранжевые"],
+        "sizes": ["1", "2", "3"],
+        "photos": [
+          "EDCcut2.jpg",
+          "Podsumok1.jpg",
+          "watis.jpg"
+        ],
+        "preview": "Backpack1.jpg"
+      },
+   
+
+      {
+        "id": "2",
+        "category": "Backpacks",
         "brand": "EDC",
         "name": "Ножницы",
         "cost": 85,
@@ -13,7 +31,63 @@
           "Podsumok1.jpg",
           "watis.jpg"
         ],
-        "preview": "Podsumok1.jpg"
+        "preview": "Backpack2.jpg"
+      },
+   
+
+      {
+        "id": "3",
+        "category": "Backpacks",
+        "brand": "EDC",
+        "name": "Ножницы",
+        "cost": 85,
+        "descr": "Описание ножниц",
+        "color": ["Зеленые", "Оранжевые"],
+        "sizes": ["1", "2", "3"],
+        "photos": [
+          "EDCcut2.jpg",
+          "Podsumok1.jpg",
+          "watis.jpg"
+        ],
+        "preview": "Backpack1.jpg"
+      },
+   
+
+      {
+        "id": "4",
+        "category": "Backpacks",
+        "brand": "EDC",
+        "name": "Ножницы",
+        "cost": 85,
+        "descr": "Описание ножниц",
+        "color": ["Зеленые", "Оранжевые"],
+        "sizes": ["1", "2", "3"],
+        "photos": [
+          "EDCcut2.jpg",
+          "Podsumok1.jpg",
+          "watis.jpg"
+        ],
+        "preview": "Backpack2.jpg"
+      },
+   
+
+      {
+        "id": "5",
+        "category": "Backpacks",
+        "brand": "EDC",
+        "name": "Ножницы",
+        "cost": 85,
+        "descr": "Описание ножниц",
+        "color": ["Зеленые", "Оранжевые"],
+        "sizes": ["1", "2", "3"],
+        "photos": [
+          "EDCcut2.jpg",
+          "Podsumok1.jpg",
+          "watis.jpg"
+        ],
+        "preview": "Backpack1.jpg"
       }
    
+
+      
 ]

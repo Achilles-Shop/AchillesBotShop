@@ -2,187 +2,182 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-// Хэш элемент для изменения содержимого страниц
-let hash = location.hash.substring(1);
-
-
-
-
-// Запрос в базу данных
-const getData = async () => {
-  const data = await fetch('db.json');
-  if (data.ok) {
-    return data.json();
-  }
-  else {
-    throw new Error(`Данные не были получены ошибка ${data.status} ${data.statusText}`);
-  }
-};
-
-// Формирование товаров по категориям
-const getGoods = (callback, prop, value) => {
-  getData()
-  .then(data => {
-    if (value) {
-      callback(data.filter(item => item[prop] === value));
+  // Хэш элемент для изменения содержимого страниц
+  let hash = location.hash.substring(1);
+  
+  
+  
+  
+  // Запрос в базу данных
+  const getData = async () => {
+    const data = await fetch('db.json');
+    if (data.ok) {
+      return data.json();
     }
     else {
-      callback(data);
+      throw new Error(`Данные не были получены ошибка ${data.status} ${data.statusText}`);
     }
-  })
-  .catch(err => {
-    console.error(err);
-  });
-};
-
-
-
-// Страница категорий товаров
-try {
-  const goodsList = document.querySelector('.goods__list');
-  const goodsTitle = document.querySelector('.goods__title');
-  const changeTitle = () => {
-    goodsTitle.textContent = document.querySelector(`[href*="#${hash}"]`).textContent;
   };
-  const createCard = ({ id, preview, cost, brand, name, sizes }) => {
-    const li = document.createElement('li');
-    li.classList.add('goods__item');
-    li.innerHTML = `
-    <article class="good">
-      <a class="good__link-img" href="card-good.html#${id}">
-        <img class="good__img" src="./images/goods-image/${preview}" alt="">
-      </a>
-      <div class="good__description">
-        <p class="good__price">${cost} RUB</p>
-        <h3 class="good__title">${brand} <span class="good__title__grey">/ ${name}</span></h3>
-        ${sizes ?
-      `<p class="good__sizes">Размеры: <span class="good__sizes-list">${sizes.join(' ')}</span></p>` :
-      ''}
-        <a class="good__link" href="card-good.html#${id}">Подробнее</a>
-      </div>
-    </article>
-    `;
-    return li;
-  };
-
-  const renderGoodsList = data => {
-    goodsList.textContent = '';
-    data.forEach(item => {
-      const card = createCard(item);
-      goodsList.append(card);
+  
+  // Формирование товаров по категориям
+  const getGoods = (callback, prop, value) => {
+    getData()
+    .then(data => {
+      if (value) {
+        callback(data.filter(item => item[prop] === value));
+      }
+      else {
+        callback(data);
+      }
+    })
+    .catch(err => {
+      console.error(err);
     });
   };
-
-  // Изменение содержимого при смене страниц
-  window.addEventListener('hashchange', () => {
-    hash = location.hash.substring(1);
+  
+  
+  
+  // Страница категорий товаров
+  try {
+    const goodsList = document.querySelector('.goods__list');
+    const goodsTitle = document.querySelector('.goods__title');
+    const changeTitle = () => {
+      goodsTitle.textContent = document.querySelector(`[href*="#${hash}"]`).textContent;
+    };
+    const createCard = ({ id, preview, cost, brand, name, sizes }) => {
+      const li = document.createElement('li');
+      li.classList.add('goods__item');
+      li.innerHTML = `
+      <article class="good">
+        <a class="good__link-img" href="card-good.html#${id}">
+          <img class="good__img" src="./images/goods-image/${preview}" alt="">
+        </a>
+        <div class="good__description">
+          <p class="good__price">${cost} RUB</p>
+          <h3 class="good__title">${brand} <span class="good__title__grey">/ ${name}</span></h3>
+          ${sizes ?
+        `<p class="good__sizes">Размеры: <span class="good__sizes-list">${sizes.join(' ')}</span></p>` :
+        ''}
+          <a class="good__link" href="card-good.html#${id}">Подробнее</a>
+        </div>
+      </article>
+      `;
+      return li;
+    };
+  
+    const renderGoodsList = data => {
+      goodsList.textContent = '';
+      data.forEach(item => {
+        const card = createCard(item);
+        goodsList.append(card);
+      });
+    };
+  
+    // Изменение содержимого при смене страниц
+    window.addEventListener('hashchange', () => {
+      hash = location.hash.substring(1);
+      getGoods(renderGoodsList, 'category', hash);
+      changeTitle();
+    });
+  
     getGoods(renderGoodsList, 'category', hash);
     changeTitle();
-  });
+  }
+  catch (err) {
+    console.warn(err);
+  }
+  
+  // Страница товара
+  try {
+    const cardGoodImage = document.querySelector('.card-good__image');
+    const cardGoodBrand = document.querySelector('.card-good__brand');
+    const cardGoodTitle = document.querySelector('.card-good__title');
+    const cardGoodPrice = document.querySelector('.card-good__price');
+    const cardGoodDescr = document.querySelector('.card-good__descr');
+    const cardGoodColor = document.querySelector('.card-good__color');
+    const cardGoodSelectWrapper = document.querySelectorAll('.card-good__select__wrapper');
+    const cardGoodColorList = document.querySelector('.card-good__color-list');
+    const cardGoodSizes = document.querySelector('.card-good__sizes');
+    const cardGoodSizesList = document.querySelector('.card-good__sizes-list');
+    const cardGoodBuy = document.querySelector('.card-good__buy');
+    const cardGoodSlider = document.querySelector('.card-good__slider');
+  
+    const generateList = data => data.reduce((html, item, i) =>
+      html + `<li class="card-good__select-item" data-id="${i}">${item}</li>`, '');
+  
+  
+  
 
-  getGoods(renderGoodsList, 'category', hash);
-  changeTitle();
-}
-catch (err) {
-  console.warn(err);
-}
-
-// Страница товара
-try {
-  const cardGoodImage = document.querySelector('.card-good__image');
-  const cardGoodBrand = document.querySelector('.card-good__brand');
-  const cardGoodTitle = document.querySelector('.card-good__title');
-  const cardGoodPrice = document.querySelector('.card-good__price');
-  const cardGoodDescr = document.querySelector('.card-good__descr');
-  const cardGoodColor = document.querySelector('.card-good__color');
-  const cardGoodSelectWrapper = document.querySelectorAll('.card-good__select__wrapper');
-  const cardGoodColorList = document.querySelector('.card-good__color-list');
-  const cardGoodSizes = document.querySelector('.card-good__sizes');
-  const cardGoodSizesList = document.querySelector('.card-good__sizes-list');
-  const cardGoodBuy = document.querySelector('.card-good__buy');
-  const cardGoodSlider = document.querySelector('.card-good__slider');
-
-  const generateList = data => data.reduce((html, item, i) =>
-    html + `<li class="card-good__select-item" data-id="${i}">${item}</li>`, '');
-
-
-
-// Изменения для подключения Swiper
-document.addEventListener('DOMContentLoaded', function () {
-  // Инициализация Swiper
-  const mySwiper = new Swiper('.card-good__slider', {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    direction: 'vertical',
-    loop: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-       prevEl: '.swiper-button-prev',
-    },
-  });
-});
-
-  const renderCardGood = ([{ id, brand, name, cost, descr, color, sizes, photos }]) => {
-    const data = { brand, name, cost, descr, id };
-    cardGoodImage.alt = `${brand} ${name}`;
-    cardGoodBrand.textContent = brand;
-    cardGoodTitle.textContent = name;
-    cardGoodPrice.textContent = `${cost} RUB`;
-    cardGoodDescr.textContent = descr;
-
-    // Отображение слайдера
-    const slidesHtml = photos.map(photo => `
-    <div class="swiper-slide">
-      <img src="./images/goods-image/${photo}">
-    </div>
-  `);
-
-  const sliderHtml = `
-    <div class="card-good__slider swiper-container">
-      <div class="swiper-wrapper">
-        ${slidesHtml.join('')}
+  
+    const renderCardGood = ([{ id, brand, name, cost, descr, color, sizes, photos }]) => {
+      const data = { brand, name, cost, descr, id };
+      cardGoodImage.alt = `${brand} ${name}`;
+      cardGoodBrand.textContent = brand;
+      cardGoodTitle.textContent = name;
+      cardGoodPrice.textContent = `${cost} RUB`;
+      cardGoodDescr.textContent = descr;
+  
+      // Отображение слайдера
+      const slidesHtml = photos.map(photo => `
+      <div class="swiper-slide">
+        <img src="./images/goods-image/${photo}">
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
-  `;
-    cardGoodSlider.innerHTML = sliderHtml;
- // Отображение слайдера
+    `);
+  
+    const sliderHtml = `
+      <div class="card-good__slider swiper-container">
+        <div class="swiper-wrapper">
+          ${slidesHtml.join('')}
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    `;
+      cardGoodSlider.innerHTML = sliderHtml;
+   // Отображение слайдера
+  
 
 
 
+   
+  
 
-    if (color) {
-      cardGoodColor.textContent = color[0];
-      cardGoodColor.dataset.id = 0;
-      cardGoodColorList.innerHTML = generateList(color);
-    } else {
-      cardGoodColor.style.display = 'none';
-    }
-    if (sizes) {
-      cardGoodSizes.textContent = sizes[0];
-      cardGoodSizes.dataset.id = 0;
-      cardGoodSizesList.innerHTML = generateList(sizes);
-    } else {
-      cardGoodSizes.style.display = 'none';
-    }
+
 
   
-  };
-
-  cardGoodSelectWrapper.forEach(item => {
-    item.addEventListener('click', e => {
-      const target = e.target;
-      if (target.closest('.card-good__select')) {
-        target.classList.toggle('card-good__select__open');
+      if (color) {
+        cardGoodColor.textContent = color[0];
+        cardGoodColor.dataset.id = 0;
+        cardGoodColorList.innerHTML = generateList(color);
+      } else {
+        cardGoodColor.style.display = 'none';
       }
-      
-    });
-  });
-
+      if (sizes) {
+        cardGoodSizes.textContent = sizes[0];
+        cardGoodSizes.dataset.id = 0;
+        cardGoodSizesList.innerHTML = generateList(sizes);
+      } else {
+        cardGoodSizes.style.display = 'none';
+      }
   
-  getGoods(renderCardGood, 'id', hash);
-} catch (err) {
-  console.warn(err);
-}
-});
+    
+    };
+  
+    cardGoodSelectWrapper.forEach(item => {
+      item.addEventListener('click', e => {
+        const target = e.target;
+        if (target.closest('.card-good__select')) {
+          target.classList.toggle('card-good__select__open');
+        }
+        
+      });
+    });
+  
+    
+    getGoods(renderCardGood, 'id', hash);
+  } catch (err) {
+    console.warn(err);
+  }
+
+
+  });
