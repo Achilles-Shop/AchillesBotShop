@@ -1,12 +1,9 @@
-
-
 document.addEventListener('DOMContentLoaded', function () {
 
   // Хэш элемент для изменения содержимого страниц
   let hash = location.hash.substring(1);
   
-  
-  
+
   
   // Запрос в базу данных
   const getData = async () => {
@@ -55,9 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="good__description">
           <p class="good__price">${cost} RUB</p>
           <h3 class="good__title">${brand} <span class="good__title__grey">/ ${name}</span></h3>
-          ${sizes ?
-        `<p class="good__sizes">Размеры: <span class="good__sizes-list">${sizes.join(' ')}</span></p>` :
-        ''}
+       
           <a class="good__link" href="card-good.html#${id}">Подробнее</a>
         </div>
       </article>
@@ -87,7 +82,19 @@ document.addEventListener('DOMContentLoaded', function () {
     console.warn(err);
   }
   
+
+  
+
+
   // Страница товара
+
+  const swiper = new Swiper('.swiper', {
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+  });
+
   try {
     const cardGoodImage = document.querySelector('.card-good__image');
     const cardGoodBrand = document.querySelector('.card-good__brand');
@@ -100,7 +107,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const cardGoodSizes = document.querySelector('.card-good__sizes');
     const cardGoodSizesList = document.querySelector('.card-good__sizes-list');
     const cardGoodBuy = document.querySelector('.card-good__buy');
-    const cardGoodSlider = document.querySelector('.card-good__slider');
   
     const generateList = data => data.reduce((html, item, i) =>
       html + `<li class="card-good__select-item" data-id="${i}">${item}</li>`, '');
@@ -117,28 +123,19 @@ document.addEventListener('DOMContentLoaded', function () {
       cardGoodPrice.textContent = `${cost} RUB`;
       cardGoodDescr.textContent = descr;
   
-      // Отображение слайдера
-      const slidesHtml = photos.map(photo => `
-      <div class="swiper-slide">
-        <img src="./images/goods-image/${photo}">
-      </div>
-    `);
-  
-    const sliderHtml = `
-      <div class="card-good__slider swiper-container">
-        <div class="swiper-wrapper">
-          ${slidesHtml.join('')}
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-    `;
-      cardGoodSlider.innerHTML = sliderHtml;
-   // Отображение слайдера
-  
 
-
-
+        // слайдер--------------------------------------------------
+      const swiperWrapper = document.querySelector('.swiper-wrapper');
+      // Очищаем содержимое слайдера перед добавлением новых слайдов
+      swiperWrapper.innerHTML = '';
+      // Для каждой фотографии в массиве photos создаем новый слайд
+      photos.forEach(photo => {
+        const slide = document.createElement('div');
+        slide.classList.add('swiper-slide');
+        slide.innerHTML = `<img src="./images/goods-image/${photo}">`;
+        swiperWrapper.appendChild(slide);
+      });
+       // слайдер--------------------------------------------------
    
   
 
@@ -178,6 +175,15 @@ document.addEventListener('DOMContentLoaded', function () {
   } catch (err) {
     console.warn(err);
   }
+
+
+
+
+
+
+
+
+
 
 
   });

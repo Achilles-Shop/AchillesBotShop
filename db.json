@@ -9,11 +9,13 @@
         "color": ["Зеленые", "Оранжевые"],
         "sizes": ["1", "2", "3"],
         "photos": [
-          "EDCcut2.jpg",
-          "Podsumok1.jpg",
-          "watis.jpg"
+          "sumka1.jpg",
+          "sumka2.jpg",
+          "sumka3.jpg",
+          "sumka3.jpg",
+          "sumka4.jpg"
         ],
-        "preview": "Backpack1.jpg"
+        "preview": "sumka1.jpg"
       },
    
 
