@@ -432,6 +432,7 @@ button {
     -ms-flex-preferred-size: 280px;
     flex-basis: 280px;   
     display: grid;
+    grid-template-columns: auto auto; /* Определяем две колонки */
     gap: 20px
   
 }
@@ -446,23 +447,26 @@ button {
 
 .card-good__brand {
     font-size: 15px;
+    grid-column: 1; /* Помещаем .card-good__title в первую колонку */
     font-weight: 400;
     line-height: 32px;
     margin-bottom: 0px
 }
 
 .card-good__title-wrapper {
+    grid-column: 1; /* Помещаем .card-good__title в первую колонку */
     margin-bottom: 0px
 }
 
 .card-good__title {
-    font-size: 30px;
+    grid-column: 1; /* Помещаем .card-good__title в первую колонку */
+    font-size: 25px;
     font-weight: 400;
     line-height: 16px
 }
 
 .card-good__select__wrapper {
-    position: relative
+    grid-column: span 2; /* Растягиваем элемент на две колонки */
 }
 
 .card-good__select {
@@ -549,9 +553,16 @@ button {
 }
 
 .card-good__price {
+    font-size: 25px;
+    line-height: 16px;
+    grid-column: 2; /* Помещаем .card-good__price во вторую колонку */
+    text-align: right; /* Выравниваем текст вправо */
     margin-bottom: 0px
 }
 
+.card-good__descr {
+    grid-column: span 2; /* Растягиваем элемент на две колонки */
+}
 
 
 .card-good__color-wrapper {
@@ -592,6 +603,7 @@ button {
 
   .buy_button {
     width: 100%;
+    grid-column: span 2; /* Растягиваем элемент на две колонки */
     margin-top: 10px;
     margin-bottom: 60px; /* Ваш отступ снизу */
     background-color: #000;
