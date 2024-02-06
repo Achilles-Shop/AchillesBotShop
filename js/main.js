@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
   
 // Закрытие меню  
 function toggleDropdown() {
-  var dropdown = document.getElementById("myDropdown");
-  dropdown.classList.toggle("show");
-}
+        var dropdown = document.getElementById("myDropdown");
+        dropdown.classList.toggle("show");
+    }
 // Закрытие меню 
 
   
