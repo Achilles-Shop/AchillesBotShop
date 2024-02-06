@@ -294,6 +294,7 @@ button {
     grid-column: span 2; /* Это указывает, что элемент должен занимать ширину 2 колонок, начиная с первой колонки */
     grid-row: 5/6;    /* Добавлено значение для grid-row */
     overflow: hidden;   /* Обрезает изображение, если оно выходит за пределы элемента */
+    margin-bottom: 60px;
 }
 
 
@@ -659,7 +660,7 @@ button {
   .buy_button {
     width: 100%;
     margin-top: 10px;
-    margin-bottom: 40px; /* Ваш отступ снизу */
+    margin-bottom: 60px; /* Ваш отступ снизу */
     background-color: #000;
     color: #FFF;
     padding: 8px 16px;
