@@ -713,9 +713,16 @@ button {
   display: block;
 }
 
-   .show {
-        display: block;
-    }
+
+
+.dropdown-content {
+  display: none; /* Начальное состояние - скрытое меню */
+}
+
+.dropdown-content.show {
+  display: block; /* Показываем меню, когда есть класс "show" */
+}
+
 
 
 /* Перекраска svg  https://isotropic.co/tool/hex-color-to-css-filter/ */
