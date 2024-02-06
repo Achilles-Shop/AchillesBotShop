@@ -345,6 +345,7 @@ button {
 
 .goods__item {
     -ms-grid-column-align: center;
+    border-radius: 10px;
     justify-self: center
 }
 
