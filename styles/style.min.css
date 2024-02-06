@@ -635,6 +635,7 @@ button {
 .swiper {
     width: 100%;
     height: auto;
+    margin-top: 20px; /* Ваш отступ сверху */
     swiper-theme-color: #FF0000;
   }
 
