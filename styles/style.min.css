@@ -642,19 +642,10 @@ button {
   .footer
   {
     background-color: #ffffff;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 80px;
-    
-    
+   
   }
 
-  .button-container {
-    display: flex; /* Устанавливаем контейнер как Flexbox */
-    justify-content: center; /* Центрируем кнопку по горизонтали в контейнере */
-}
+ 
 
   .buy_button {
     margin-left: 10px;
