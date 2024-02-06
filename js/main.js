@@ -2,7 +2,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Хэш элемент для изменения содержимого страниц
   let hash = location.hash.substring(1);
+
   
+// Закрытие меню  
+function toggleDropdown() {
+  var dropdown = document.getElementById("myDropdown");
+  dropdown.classList.toggle("show");
+}
+// Закрытие меню 
 
   
   // Запрос в базу данных
