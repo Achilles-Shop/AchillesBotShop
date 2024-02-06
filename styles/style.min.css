@@ -651,7 +651,6 @@ button {
 
   .footer
   {
-      margin-top: 20px;
     background-color: #ffffff;   
   }
 
@@ -660,6 +659,7 @@ button {
   .buy_button {
     width: 100%;
     margin-top: 10px;
+    margin-bottom: 40px; /* Ваш отступ снизу */
     background-color: #000;
     color: #FFF;
     padding: 8px 16px;
@@ -673,7 +673,7 @@ button {
 
 /* Кнопка выпадающего списка */
 .dropbtn {
-  background-color: #004fe3;
+  background-color: #000;
   border: none;
   width: 50px;
   height: 50px;
