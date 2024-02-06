@@ -29,9 +29,9 @@
                 <img src="images/svg/logoPNG.png" alt="Achilles Shop">
             </a>
             
-           <div class="dropdown" style="float:right;">
- <button class="dropbtn" onclick="toggleDropdown()"><img src="images/svg/menu.svg" class="filter-green"/></button>
-  <div class="dropdown-content" id="myDropdown">
+<div class="dropdown" style="float:right;">
+<button onclick="myFunction()" class="dropbtn">&#9776;</button>
+<div id="myDropdown" class="dropdown-content">
     <a href="goods.html#Backpacks">Рюкзаки</a>
     <a href="goods.html#Bags">Сумки</a>
     <a href="goods.html#Unloading">Разгрузки </a>
@@ -43,25 +43,17 @@
   </div>
 </div>
            <script>
-function toggleDropdown() {
-  var dropdown = document.getElementById("myDropdown");
-  // Проверяем, имеет ли элемент класс "show"
-  var isOpen = dropdown.classList.contains("show");
-  
-  // Если меню открыто и пользователь нажимает снова, то закрываем его
-  if (isOpen) {
-    dropdown.classList.remove("show");
-  } else {
-    // Иначе открываем меню
-    dropdown.classList.add("show");
-  }
+/* Когда пользователь нажимает на кнопку, переключаться раскрывает содержимое */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Закрываем меню, если пользователь кликает вне области меню
+// Закрыть раскрывающийся список, если пользователь щелкнет за его пределами.
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
-    for (var i = 0; i < dropdowns.length; i++) {
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');

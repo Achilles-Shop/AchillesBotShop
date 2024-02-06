@@ -675,6 +675,8 @@ button {
 /* Кнопка выпадающего списка */
 .dropbtn {
   background-color: #000;
+  color: #ffffff;
+  font-size: 25px; 
   border: none;
   width: 50px;
   height: 50px;
@@ -684,46 +686,32 @@ button {
 }
 
 .dropdown {
-  position: relative;
-  display: inline-block;
-  float: right;
+    float: right;
+    position: relative;
+    display: inline-block;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  right: 0;
-  background-color: #f1f1f1;
-  width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 9999;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 9999;
 }
 
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
+.dropdown a:hover {background-color: #ddd;}
 
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-
-
-.dropdown-content {
-  display: none; /* Начальное состояние - скрытое меню */
-}
-
-.dropdown-content.show {
-  display: block; /* Показываем меню, когда есть класс "show" */
-}
-
+.show {display: block;}
+/* Кнопка выпадающего списка */
 
 
 /* Перекраска svg  https://isotropic.co/tool/hex-color-to-css-filter/ */
