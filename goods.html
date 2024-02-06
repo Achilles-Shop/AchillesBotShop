@@ -42,12 +42,35 @@
     <a href="goods.html#FabricsAccessories">Ткани / Фурнитура</a>
   </div>
 </div>
-            <script>
+           <script>
 function toggleDropdown() {
   var dropdown = document.getElementById("myDropdown");
-  dropdown.classList.toggle("show");
+  // Проверяем, имеет ли элемент класс "show"
+  var isOpen = dropdown.classList.contains("show");
+  
+  // Если меню открыто и пользователь нажимает снова, то закрываем его
+  if (isOpen) {
+    dropdown.classList.remove("show");
+  } else {
+    // Иначе открываем меню
+    dropdown.classList.add("show");
+  }
+}
+
+// Закрываем меню, если пользователь кликает вне области меню
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
 }
 </script>
+
 
             
         </div>
