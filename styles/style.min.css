@@ -653,8 +653,8 @@ button {
  
 
   .buy_button {
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 100%;
+    margin-top: 10px;
     background-color: #000;
     color: #FFF;
     padding: 8px 16px;
