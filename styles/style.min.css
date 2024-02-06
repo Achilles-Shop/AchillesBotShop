@@ -632,6 +632,7 @@ button {
 .swiper {
     width: 100%;
     height: auto;
+    swiper-theme-color: #FF0000;
   }
 
 .swiper-pagination-bullet-active {
