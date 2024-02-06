@@ -711,6 +711,10 @@ button {
   display: block;
 }
 
+   .show {
+        display: block;
+    }
+
 
 /* Перекраска svg  https://isotropic.co/tool/hex-color-to-css-filter/ */
 .filter-green{
