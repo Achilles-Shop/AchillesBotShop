@@ -634,6 +634,11 @@ button {
     height: auto;
   }
 
+.swiper-pagination-bullet-active {
+    color: #FF0000;
+    opacity: 1
+}
+
 .card-good__slider{
     max-width: 100%;
     overflow: hidden;
@@ -642,8 +647,7 @@ button {
   .footer
   {
       margin-top: 20px;
-    background-color: #ffffff;
-   
+    background-color: #ffffff;   
   }
 
  
@@ -657,8 +661,5 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer; 
- 
-    
-    
-    
+
 }
