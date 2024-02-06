@@ -719,3 +719,23 @@ button {
     filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(339deg) brightness(101%) contrast(101%);
 }
 /* Перекраска svg */
+
+/* иконки соц сетей */
+.fa {
+    padding: 20px;
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 2px;
+    border-radius: 4px;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+    .fa-instagram {
+        background: #ab050e;
+        color: white;
+      }
+/* иконки соц сетей */

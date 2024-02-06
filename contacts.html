@@ -2,47 +2,101 @@
 <html lang="en">
 
 <head>
-    <!-- Ваши метатеги и стили оставляем без изменений -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AChilles Shop — богатый выбор сняряжения!">
+    <title>Achilles Shop</title>
+
+
+    <link rel="icon" type="image/png" href="./images/favicon/favicon.png">
+    <link rel="preload" href="fonts/CoFoSans-Bold.woff2" as="font" type="font/woff2" crossorigin media="print" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="fonts/CoFoSans-Black.woff2" as="font" type="font/woff2" crossorigin media="print" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="fonts/CoFoSans-Regular.woff2" as="font" type="font/woff2" crossorigin media="print" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="fonts/CoFoSans-Medium.woff2" as="font" type="font/woff2" crossorigin media="print" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="styles/style.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
-                <a href="index.html" class="subheader__logo">
-                    <img src="images/svg/logoPNG.png" alt="Achilles Shop">
-                </a>
-                <!-- Заменяем текст кнопки на "Главная" и изменяем ссылку -->
-                <a href="index.html" class="header__button">Главная</a>
-            </div>
-        </div>
-    </header>
+             <header class="header">
 
-    <main>
-        <div class="container">
-            <div class="subheader__wrapper">
-                <!-- Ваш код навигации или его отсутствие -->
-            </div>
-        </div>
+    <div class="container">
+        <div class="header__wrapper"> 
+            <a href="index.html" class="subheader__logo">
+                <img src="images/svg/logoPNG.png" alt="Achilles Shop">
+            </a>
+            
+<div class="dropdown" style="float:right;">
+<button onclick="myFunction()" class="dropbtn">&#9776;</button>
+<div id="myDropdown" class="dropdown-content">
+    <a href="goods.html#Backpacks">Рюкзаки</a>
+    <a href="goods.html#Bags">Сумки</a>
+    <a href="goods.html#Unloading">Разгрузки </a>
+    <a href="goods.html#Bibs">Нагрудники</a>
+    <a href="goods.html#Belts">Пояса</a>
+    <a href="goods.html#CatPouches">Подсумки</a>
+    <a href="goods.html#CatCloth">Одежда</a>
+    <a href="goods.html#FabricsAccessories">Ткани / Фурнитура</a>
+  </div>
+</div>
+           <script>
+/* Когда пользователь нажимает на кнопку, переключаться раскрывает содержимое */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
-        <!-- Секция контактов -->
-        <section class="contacts">
-            <div class="container">
-                <h2>Контакты</h2>
-                <p>Наш адрес: Город, Улица, Дом</p>
-                <p>Телефон: +7 (XXX) XXX-XX-XX</p>
-                <p>Email: info@achilles-shop.com</p>
-            </div>
-        </section>
+// Закрыть раскрывающийся список, если пользователь щелкнет за его пределами.
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+            
+        </div>
+    </div>
+</header>
+ <main>
+      
+</section>
+       <!-- Секция контактов -->
+       <section class="contacts">
+        <div class="container">
+            <h2>Контакты</h2>
+            <button class="google__button" onclick="location.href='https://t.me/home_style_md'">Администратор</button>
+            <p>Наш адрес: Город, Улица, Дом</p>
+            <p>Телефон:  (XXX) XXX-XX-XX</p>
+            <p>Email: info@achilles-shop.com</p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <button class="yandex__button" onclick="location.href='https://maps.app.goo.gl/SCaH4FG2fNxMrT9E7'">Google карты</button>
+            <button class="google__button" onclick="location.href='https://yandex.ru/maps/-/CDBBuTIQ'">Yandex карты</button>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6827.531271542355!2d-73.32214184242912!3d21.083128006594134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb5799f547b37d9%3A0xfb6047105bc4d458!2z0J3QsNGG0LjQvtC90LDQu9GM0L3Ri9C5INC_0LDRgNC6INCY0L3QsNCz0YPQsA!5e0!3m2!1sru!2s!4v1707256687276!5m2!1sru!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+        </div>
+    </section>
+
+
+
     </main>
-
     <footer class="footer">
-        <!-- Ваш код подвала или его отсутствие -->
+        
     </footer>
 
-    <!-- Ваши элементы корзины оставляем без изменений -->
 
     <script src="js/main.js"></script>
 </body>
-
 </html>
