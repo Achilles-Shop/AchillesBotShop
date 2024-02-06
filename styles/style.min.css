@@ -657,11 +657,7 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer; 
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -ms-flex-preferred-size: 280px;
-    flex-basis: 280px
+ 
     
     
     
