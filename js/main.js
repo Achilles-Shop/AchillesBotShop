@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
   // Хэш элемент для изменения содержимого страниц
   let hash = location.hash.substring(1);
  
-  // Запрос в базу данных
+ // Запрос в базу данных
   const getData = async () => {
-    const data = await fetch('db.json');
+    const data = await fetch('https://script.google.com/macros/s/AKfycbxg6xXFgoT0_AAXXRVKvtzxqfxt018lfyW5LumSWGVE9cP-o9GzyiOQaBiNGl7c2dkZ/exec');
     if (data.ok) {
       return data.json();
     }
