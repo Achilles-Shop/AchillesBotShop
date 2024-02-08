@@ -1,1 +1,170 @@
-
+[
+  {
+    "id": "9",
+    "category": "Backpacks",
+    "brand": "???????????????",
+    "name": "??????22",
+    "cost": "7777",
+    "descr": "????????",
+    "color": [
+      "red",
+      "green"
+    ],
+    "sizes": [
+      "2"
+    ],
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg"
+  },
+  {
+    "id": "2",
+    "category": "Bags",
+    "brand": "???????22",
+    "name": "?????",
+    "cost": "777",
+    "descr": "description item",
+    "color": [
+      "red",
+      "green"
+    ],
+    "sizes": [
+      "2"
+    ],
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg"
+  },
+  {
+    "id": "3",
+    "category": "Unloading",
+    "brand": "Achilles",
+    "name": "Podsumok03",
+    "cost": "888",
+    "descr": "description item",
+    "color": [
+      "red",
+      "green"
+    ],
+    "sizes": [
+      "2"
+    ],
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg"
+  },
+  {
+    "id": "4",
+    "category": "Bibs",
+    "brand": "Achilles",
+    "name": "Podsumok04",
+    "cost": "999",
+    "descr": "description item",
+    "color": [
+      "red",
+      "green"
+    ],
+    "sizes": [
+      "2"
+    ],
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg"
+  },
+  {
+    "id": "5",
+    "category": "Belts",
+    "brand": "Achilles",
+    "name": "Podsumok05",
+    "cost": "1110",
+    "descr": "description item",
+    "color": [
+      "red",
+      "green"
+    ],
+    "sizes": [
+      "2"
+    ],
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg"
+  },
+  {
+    "id": "6",
+    "category": "CatPouches",
+    "brand": "Achilles",
+    "name": "Podsumok06",
+    "cost": "1221",
+    "descr": "description item",
+    "color": [
+      "red",
+      "green"
+    ],
+    "sizes": [
+      "2"
+    ],
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg"
+  },
+  {
+    "id": "7",
+    "category": "CatCloth",
+    "brand": "Achilles",
+    "name": "Podsumok07",
+    "cost": "1332",
+    "descr": "description item",
+    "color": [
+      "red",
+      "green"
+    ],
+    "sizes": [
+      "2"
+    ],
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg"
+  },
+  {
+    "id": "8",
+    "category": "FabricsAccessories",
+    "brand": "Achilles",
+    "name": "Podsumok08",
+    "cost": "1443",
+    "descr": "description item",
+    "color": [
+      "red",
+      "green"
+    ],
+    "sizes": [
+      "2"
+    ],
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg"
+  }
+]
