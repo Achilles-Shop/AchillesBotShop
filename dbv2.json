@@ -25,7 +25,7 @@
     "id": "2",
     "category": "Bags",
     "brand": "Achilles",
-    "name": "сумка",
+    "name": "Походный рюкзак ",
     "cost": "777",
     "descr": "description item",
     "color": [
@@ -47,7 +47,7 @@
     "id": "3",
     "category": "Armor",
     "brand": "Achilles",
-    "name": "Podsumok03",
+    "name": "Походный рюкзак ",
     "cost": "888",
     "descr": "description item",
     "color": [
@@ -69,7 +69,7 @@
     "id": "4",
     "category": "Unloading",
     "brand": "Achilles",
-    "name": "Podsumok04",
+    "name": "Походный рюкзак ",
     "cost": "999",
     "descr": "description item",
     "color": [
@@ -91,7 +91,7 @@
     "id": "5",
     "category": "Bibs",
     "brand": "Achilles",
-    "name": "Podsumok05",
+    "name": "Походный рюкзак ",
     "cost": "1110",
     "descr": "description item",
     "color": [
@@ -113,7 +113,7 @@
     "id": "6",
     "category": "Belts",
     "brand": "Achilles",
-    "name": "Podsumok06",
+    "name": "Походный рюкзак ",
     "cost": "1221",
     "descr": "description item",
     "color": [
@@ -135,7 +135,7 @@
     "id": "7",
     "category": "Pouches",
     "brand": "Achilles",
-    "name": "Podsumok07",
+    "name": "Походный рюкзак ",
     "cost": "1332",
     "descr": "description item",
     "color": [
@@ -157,7 +157,7 @@
     "id": "8",
     "category": "Cloth",
     "brand": "Achilles",
-    "name": "Podsumok08",
+    "name": "Походный рюкзак ",
     "cost": "1443",
     "descr": "description item",
     "color": [
@@ -179,7 +179,7 @@
     "id": "",
     "category": "FabricsAccessories",
     "brand": "",
-    "name": "",
+    "name": "Походный рюкзак ",
     "cost": "",
     "descr": "",
     "color": [
@@ -198,7 +198,7 @@
     "id": "",
     "category": "Uncategorized",
     "brand": "",
-    "name": "",
+    "name": "Походный рюкзак ",
     "cost": "",
     "descr": "",
     "color": [
