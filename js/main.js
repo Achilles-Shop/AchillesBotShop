@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
  
  // Запрос в базу данных
   const getData = async () => {
-    const data = await fetch('https://script.google.com/macros/s/AKfycbxg6xXFgoT0_AAXXRVKvtzxqfxt018lfyW5LumSWGVE9cP-o9GzyiOQaBiNGl7c2dkZ/exec');
+    const data = await fetch('db.json');
     if (data.ok) {
       return data.json();
     }
