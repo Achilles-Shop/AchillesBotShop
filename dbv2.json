@@ -2,18 +2,18 @@
   {
     "id": "9",
     "category": "%D0%BA%D0%B8%D1%80%D0%B8%D0%BB%D0%B8%D1%86%D0%B0",
-    "brand": "%D0%B0%D1%80%D1%85%D0%B8%D0%BB%D1%8B%D0%B0%D0%BA%D1%82%D0%B823%D0%BA",
+    "brand": "%D0%B0%D1%80%D1%85%D0%B8%D0%BB%D1%8B%D0%B0%D0%BA%D1%82%D1%86%D0%B9%D0%BA",
     "name": "%D0%A0%D1%8E%D0%BA%D0%B7%D0%B0%D0%B0",
     "cost": "7777",
     "descr": "%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5",
     "color": [
-      "red%2C%20green"
+      "red%2C green"
     ],
     "sizes": [
       "2"
     ],
     "photos": [
-      "EDCcut2.jpg%2C%20Podsumok1.jpg%2C%20watis.jpg"
+      "EDCcut2.jpg%2C Podsumok1.jpg%2C watis.jpg"
     ],
     "preview": "sumka1.jpg"
   },
@@ -23,15 +23,15 @@
     "brand": "%D1%82%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%BA%D0%B2",
     "name": "%D1%81%D1%83%D0%BC%D0%BA%D0%B0",
     "cost": "777",
-    "descr": "description%20item",
+    "descr": "description item",
     "color": [
-      "red%2C%20green"
+      "red%2C green"
     ],
     "sizes": [
       "2"
     ],
     "photos": [
-      "EDCcut2.jpg%2C%20Podsumok1.jpg%2C%20watis.jpg"
+      "EDCcut2.jpg%2C Podsumok1.jpg%2C watis.jpg"
     ],
     "preview": "sumka1.jpg"
   },
@@ -41,15 +41,15 @@
     "brand": "Achilles",
     "name": "Podsumok03",
     "cost": "888",
-    "descr": "description%20item",
+    "descr": "description item",
     "color": [
-      "red%2C%20green"
+      "red%2C green"
     ],
     "sizes": [
       "2"
     ],
     "photos": [
-      "EDCcut2.jpg%2C%20Podsumok1.jpg%2C%20watis.jpg"
+      "EDCcut2.jpg%2C Podsumok1.jpg%2C watis.jpg"
     ],
     "preview": "sumka1.jpg"
   },
@@ -59,15 +59,15 @@
     "brand": "Achilles",
     "name": "Podsumok04",
     "cost": "999",
-    "descr": "description%20item",
+    "descr": "description item",
     "color": [
-      "red%2C%20green"
+      "red%2C green"
     ],
     "sizes": [
       "2"
     ],
     "photos": [
-      "EDCcut2.jpg%2C%20Podsumok1.jpg%2C%20watis.jpg"
+      "EDCcut2.jpg%2C Podsumok1.jpg%2C watis.jpg"
     ],
     "preview": "sumka1.jpg"
   },
@@ -77,15 +77,15 @@
     "brand": "Achilles",
     "name": "Podsumok05",
     "cost": "1110",
-    "descr": "description%20item",
+    "descr": "description item",
     "color": [
-      "red%2C%20green"
+      "red%2C green"
     ],
     "sizes": [
       "2"
     ],
     "photos": [
-      "EDCcut2.jpg%2C%20Podsumok1.jpg%2C%20watis.jpg"
+      "EDCcut2.jpg%2C Podsumok1.jpg%2C watis.jpg"
     ],
     "preview": "sumka1.jpg"
   },
@@ -95,15 +95,15 @@
     "brand": "Achilles",
     "name": "Podsumok06",
     "cost": "1221",
-    "descr": "description%20item",
+    "descr": "description item",
     "color": [
-      "red%2C%20green"
+      "red%2C green"
     ],
     "sizes": [
       "2"
     ],
     "photos": [
-      "EDCcut2.jpg%2C%20Podsumok1.jpg%2C%20watis.jpg"
+      "EDCcut2.jpg%2C Podsumok1.jpg%2C watis.jpg"
     ],
     "preview": "sumka1.jpg"
   },
@@ -113,15 +113,15 @@
     "brand": "Achilles",
     "name": "Podsumok07",
     "cost": "1332",
-    "descr": "description%20item",
+    "descr": "description item",
     "color": [
-      "red%2C%20green"
+      "red%2C green"
     ],
     "sizes": [
       "2"
     ],
     "photos": [
-      "EDCcut2.jpg%2C%20Podsumok1.jpg%2C%20watis.jpg"
+      "EDCcut2.jpg%2C Podsumok1.jpg%2C watis.jpg"
     ],
     "preview": "sumka1.jpg"
   },
@@ -131,15 +131,15 @@
     "brand": "Achilles",
     "name": "Podsumok08",
     "cost": "1443",
-    "descr": "description%20item",
+    "descr": "description item",
     "color": [
-      "red%2C%20green"
+      "red%2C green"
     ],
     "sizes": [
       "2"
     ],
     "photos": [
-      "EDCcut2.jpg%2C%20Podsumok1.jpg%2C%20watis.jpg"
+      "EDCcut2.jpg%2C Podsumok1.jpg%2C watis.jpg"
     ],
     "preview": "sumka1.jpg"
   }
