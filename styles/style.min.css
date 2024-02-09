@@ -222,6 +222,12 @@ button {
     aspect-ratio: 1 / 1; /* Ширина:Высота */
 }
 
+.promo__grid-item-content2 {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2 / 1; /* Ширина:Высота */
+}
+
 .CatBackpacks {
     position: relative; /* Необходимо для позиционирования вложенных элементов */
     grid-column: 1/2;
@@ -275,9 +281,16 @@ button {
     grid-column: span 2; /* Это указывает, что элемент должен занимать ширину 2 колонок, начиная с первой колонки */
     grid-row: 5/6;    /* Добавлено значение для grid-row */
     overflow: hidden;   /* Обрезает изображение, если оно выходит за пределы элемента */
-    margin-bottom: 60px;
+    white-space: nowrap; /* Запретить перенос текста */
 }
 
+.Uncategorized {
+    grid-column: span 2; /* Это указывает, что элемент должен занимать ширину 2 колонок, начиная с первой колонки */
+    grid-row: 6/7;    /* Добавлено значение для grid-row */
+    overflow: hidden;   /* Обрезает изображение, если оно выходит за пределы элемента */
+    margin-bottom: 60px;
+    white-space: nowrap; /* Запретить перенос текста */
+}
 
 
 
@@ -465,74 +478,11 @@ button {
     line-height: 16px
 }
 
-.card-good__select__wrapper {
-    grid-column: span 2; /* Растягиваем элемент на две колонки */
-}
 
-.card-good__select {
-    position: relative;
-    padding: 8px 24px;
-    text-align: left;
-    background-color: transparent;
-    width: 100%;
-    height: 58px;
-    border: 1px solid #888;
-    border-radius: 3px
-}
 
-.card-good__select:after {
-    content: '';
-    position: absolute;
-    right: 16px;
-    top: 50%;
-    height: 16px;
-    width: 16px;
-    margin-top: -4px;
-    -webkit-transform: translateY(-50%) rotate(-45deg);
-    transform: translateY(-50%) rotate(-45deg);
-    border-style: solid;
-    border-color: transparent transparent #000 #000;
-    border-width: 1px;
-    z-index: 1;
-    -webkit-transition: border-color 0.2s ease-in-out, margin-top 0.2s ease-in-out;
-    transition: border-color 0.2s ease-in-out, margin-top 0.2s ease-in-out
-}
 
-.card-good__select__open {
-    border-bottom-color: #ccc;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0
-}
 
-.card-good__select__open:after {
-    margin-top: 6px;
-    border-color: #000 #000 transparent transparent
-}
 
-.card-good__select__open + .card-good__select-list {
-    display: block
-}
-
-.card-good__select-list {
-    display: none;
-    position: absolute;
-    max-height: 150px;
-    overflow: auto;
-    width: 100%;
-    z-index: 10;
-    background-color: #fff;
-    border: 1px solid #000;
-    border-top-color: #ccc;
-    padding: 0
-}
-
-.card-good__select-item {
-    padding: 8px
-}
-
-.card-good__select-item:hover {
-    background-color: #ccc
-}
 
 @media (max-width: 968px) {
     .card-good__title-wrapper {
@@ -553,8 +503,9 @@ button {
 }
 
 .card-good__price {
-    font-size: 25px;
+    font-size: 23px;
     line-height: 16px;
+    font-weight: normal;
     grid-column: 2; /* Помещаем .card-good__price во вторую колонку */
     text-align: right; /* Выравниваем текст вправо */
     margin-bottom: 0px
@@ -564,17 +515,31 @@ button {
     grid-column: span 2; /* Растягиваем элемент на две колонки */
 }
 
+.card-good__title-settings{
+    grid-column: span 2; /* Растягиваем элемент на две колонки */
+}
 
-.card-good__color-wrapper {
-    margin-bottom: 15px
+.card-good__color-list {
+    font-weight: normal;
+    font-size: 17px;
+    margin-bottom: 1px
+}
+
+.card-good__sizes {
+    font-weight: normal;
+    font-size: 17px;
+    margin-bottom: 1px
 }
 
 
-.card-good__sizes-wrapper {
-    margin-bottom: 30px
+.card-good__stock {
+    font-size: 15px;
+    grid-column: 2; /* Помещаем .card-good__sizw в первую колонку */
+    line-height: 32px;
+    font-weight: normal;
+    text-align: right;
+    margin-bottom: 0px
 }
-
-
 
 .swiper {
     width: 100%;

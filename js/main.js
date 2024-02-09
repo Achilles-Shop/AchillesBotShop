@@ -105,21 +105,23 @@ document.addEventListener('DOMContentLoaded', function () {
     const cardGoodSizes = document.querySelector('.card-good__sizes');
     const cardGoodSizesList = document.querySelector('.card-good__sizes-list');
     const cardGoodBuy = document.querySelector('.card-good__buy');
+    const cardGoodstock = document.querySelector('.card-good__stock');
   
     const generateList = data => data.reduce((html, item, i) =>
       html + `<li class="card-good__select-item" data-id="${i}">${item}</li>`, '');
   
-  
-  
 
   
-    const renderCardGood = ([{ id, brand, name, cost, descr, color, sizes, photos }]) => {
+    const renderCardGood = ([{ id, brand, name, cost, descr, color, stock, sizes, photos }]) => {
       const data = { brand, name, cost, descr, id };
       cardGoodImage.alt = `${brand} ${name}`;
       cardGoodBrand.textContent = brand;
       cardGoodTitle.textContent = name;
       cardGoodPrice.textContent = `${cost} RUB`;
       cardGoodDescr.textContent = descr;
+      cardGoodstock.textContent = 'Наличие: ' + stock;
+      cardGoodSizes.textContent = 'Размер.... ' + sizes;
+      cardGoodColorList.textContent = 'Цвет.......... ' + color;
   
 
         // слайдер--------------------------------------------------
@@ -134,41 +136,9 @@ document.addEventListener('DOMContentLoaded', function () {
         swiperWrapper.appendChild(slide);
       });
        // слайдер--------------------------------------------------
-   
-  
 
-
-
-  
-      if (color) {
-        cardGoodColor.textContent = color[0];
-        cardGoodColor.dataset.id = 0;
-        cardGoodColorList.innerHTML = generateList(color);
-      } else {
-        cardGoodColor.style.display = 'none';
-      }
-      if (sizes) {
-        cardGoodSizes.textContent = sizes[0];
-        cardGoodSizes.dataset.id = 0;
-        cardGoodSizesList.innerHTML = generateList(sizes);
-      } else {
-        cardGoodSizes.style.display = 'none';
-      }
-  
-    
     };
-  
-    cardGoodSelectWrapper.forEach(item => {
-      item.addEventListener('click', e => {
-        const target = e.target;
-        if (target.closest('.card-good__select')) {
-          target.classList.toggle('card-good__select__open');
-        }
-        
-      });
-    });
-  
-    
+
     getGoods(renderCardGood, 'id', hash);
   } catch (err) {
     console.warn(err);

@@ -1,95 +1,600 @@
 [
-    {
-        "id": "1",
-        "category": "Backpacks",
-        "brand": "Achilles",
-        "name": "Аптечка",
-        "cost": 360,
-        "descr": "Mission Pack MK II – это универсальный военный рюкзак среднего объема. Он обладает прекрасным внешним видом, а также отличной организацией распределения груза, которая достигается за счет наличия большого количества эластичных слотов на внутренней части основного отделения и съемных сумок со стенками из прозрачного пластика. На фронтальной части и по бокам рюкзака есть интерфейс MOLLE, образованный путем лазерной резки.",
-        "color": ["Зеленые", "Оранжевые"],
-        "sizes": ["1", "2", "3"],
-        "photos": [
-          "sumka1.jpg",
-          "sumka2.jpg",
-          "sumka3.jpg",
-          "sumka3.jpg",
-          "sumka4.jpg"
-        ],
-        "preview": "sumka1.jpg"
-      },
-   
-
-      {
-        "id": "2",
-        "category": "Backpacks",
-        "brand": "EDC",
-        "name": "Ножницы",
-        "cost": 85,
-        "descr": "Описание ножниц",
-        "color": ["Зеленые", "Оранжевые"],
-        "sizes": ["1", "2", "3"],
-        "photos": [
-          "EDCcut2.jpg",
-          "Podsumok1.jpg",
-          "watis.jpg"
-        ],
-        "preview": "Backpack2.jpg"
-      },
-   
-
-      {
-        "id": "3",
-        "category": "Backpacks",
-        "brand": "EDC",
-        "name": "Ножницы",
-        "cost": 85,
-        "descr": "Описание ножниц",
-        "color": ["Зеленые", "Оранжевые"],
-        "sizes": ["1", "2", "3"],
-        "photos": [
-          "EDCcut2.jpg",
-          "Podsumok1.jpg",
-          "watis.jpg"
-        ],
-        "preview": "Backpack1.jpg"
-      },
-   
-
-      {
-        "id": "4",
-        "category": "Backpacks",
-        "brand": "EDC",
-        "name": "Ножницы",
-        "cost": 85,
-        "descr": "Описание ножниц",
-        "color": ["Зеленые", "Оранжевые"],
-        "sizes": ["1", "2", "3"],
-        "photos": [
-          "EDCcut2.jpg",
-          "Podsumok1.jpg",
-          "watis.jpg"
-        ],
-        "preview": "Backpack2.jpg"
-      },
-   
-
-      {
-        "id": "5",
-        "category": "Backpacks",
-        "brand": "EDC",
-        "name": "Ножницы",
-        "cost": 85,
-        "descr": "Описание ножниц",
-        "color": ["Зеленые", "Оранжевые"],
-        "sizes": ["1", "2", "3"],
-        "photos": [
-          "EDCcut2.jpg",
-          "Podsumok1.jpg",
-          "watis.jpg"
-        ],
-        "preview": "Backpack1.jpg"
-      }
-   
-
-      
+  {
+    "id": "1",
+    "category": "Backpacks",
+    "brand": "Achilles",
+    "name": "Походный рюкзак ",
+    "cost": "250",
+    "descr": "описание аптечка итд и тп",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "1"
+    ],
+    "stock": "1",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": "Рюкзаки"
+  },
+  {
+    "id": "2",
+    "category": "Backpacks",
+    "brand": "Achilles",
+    "name": "Тактический рюкзак ",
+    "cost": "300",
+    "descr": "описание",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "3"
+    ],
+    "stock": "0",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": "Разгрузки"
+  },
+  {
+    "id": "3",
+    "category": "Backpacks",
+    "brand": "Achilles",
+    "name": "Городской рюкзак ",
+    "cost": "350",
+    "descr": "описание",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "1"
+    ],
+    "stock": "3",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": "Нагрудники"
+  },
+  {
+    "id": "4",
+    "category": "Backpacks",
+    "brand": "Achilles",
+    "name": "Школьный рюкзак ",
+    "cost": "400",
+    "descr": "описание",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "3"
+    ],
+    "stock": "4",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": "Пояса"
+  },
+  {
+    "id": "5",
+    "category": "Bags",
+    "brand": "Achilles",
+    "name": "Аптечка03",
+    "cost": "450",
+    "descr": "описание",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "1"
+    ],
+    "stock": "5",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": "Подсумки"
+  },
+  {
+    "id": "6",
+    "category": "Bags",
+    "brand": "Achilles",
+    "name": "Рюкзак04",
+    "cost": "500",
+    "descr": "описание",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "3"
+    ],
+    "stock": "6",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": "Одежда"
+  },
+  {
+    "id": "7",
+    "category": "Bags",
+    "brand": "Achilles",
+    "name": "Аптечка04",
+    "cost": "550",
+    "descr": "описание",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "1"
+    ],
+    "stock": "7",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": "Ткани / Фурнитура"
+  },
+  {
+    "id": "8",
+    "category": "Bags",
+    "brand": "Achilles",
+    "name": "Рюкзак05",
+    "cost": "600",
+    "descr": "описание",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "3"
+    ],
+    "stock": "8",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": ""
+  },
+  {
+    "id": "9",
+    "category": "Unloading",
+    "brand": "Achilles",
+    "name": "Аптечка05",
+    "cost": "650",
+    "descr": "описание",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "1"
+    ],
+    "stock": "9",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": ""
+  },
+  {
+    "id": "10",
+    "category": "Unloading",
+    "brand": "Achilles",
+    "name": "Рюкзак06",
+    "cost": "700",
+    "descr": "описание",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "3"
+    ],
+    "stock": "10",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": ""
+  },
+  {
+    "id": "11",
+    "category": "Bibs",
+    "brand": "Achilles",
+    "name": "Аптечка06",
+    "cost": "750",
+    "descr": "описание",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "1"
+    ],
+    "stock": "11",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": ""
+  },
+  {
+    "id": "12",
+    "category": "Bibs",
+    "brand": "Achilles",
+    "name": "Рюкзак07",
+    "cost": "800",
+    "descr": "описание",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "3"
+    ],
+    "stock": "12",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": ""
+  },
+  {
+    "id": "13",
+    "category": "Bibs",
+    "brand": "Achilles",
+    "name": "Аптечка07",
+    "cost": "850",
+    "descr": "описание",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "1"
+    ],
+    "stock": "13",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": ""
+  },
+  {
+    "id": "14",
+    "category": "Belts",
+    "brand": "Achilles",
+    "name": "Рюкзак08",
+    "cost": "900",
+    "descr": "описание",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "3"
+    ],
+    "stock": "14",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": ""
+  },
+  {
+    "id": "15",
+    "category": "Belts",
+    "brand": "Achilles",
+    "name": "Аптечка08",
+    "cost": "950",
+    "descr": "описание",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "1"
+    ],
+    "stock": "15",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": ""
+  },
+  {
+    "id": "16",
+    "category": "Belts",
+    "brand": "Achilles",
+    "name": "Рюкзак09",
+    "cost": "1000",
+    "descr": "описание",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "3"
+    ],
+    "stock": "16",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": ""
+  },
+  {
+    "id": "17",
+    "category": "CatPouches",
+    "brand": "Achilles",
+    "name": "Аптечка09",
+    "cost": "1050",
+    "descr": "описание",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "1"
+    ],
+    "stock": "17",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": ""
+  },
+  {
+    "id": "18",
+    "category": "CatPouches",
+    "brand": "Achilles",
+    "name": "Рюкзак10",
+    "cost": "1100",
+    "descr": "описание",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "3"
+    ],
+    "stock": "18",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": ""
+  },
+  {
+    "id": "19",
+    "category": "CatPouches",
+    "brand": "Achilles",
+    "name": "Аптечка10",
+    "cost": "1150",
+    "descr": "описание",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "1"
+    ],
+    "stock": "19",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": ""
+  },
+  {
+    "id": "20",
+    "category": "CatCloth",
+    "brand": "Achilles",
+    "name": "Майка",
+    "cost": "1200",
+    "descr": "описание",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "3"
+    ],
+    "stock": "20",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": ""
+  },
+  {
+    "id": "21",
+    "category": "CatCloth",
+    "brand": "Achilles",
+    "name": "Трусы",
+    "cost": "1250",
+    "descr": "описание",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "1"
+    ],
+    "stock": "21",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": ""
+  },
+  {
+    "id": "22",
+    "category": "CatCloth",
+    "brand": "Achilles",
+    "name": "Рубашка ",
+    "cost": "1300",
+    "descr": "описание",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "3"
+    ],
+    "stock": "22",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": ""
+  },
+  {
+    "id": "23",
+    "category": "CatCloth",
+    "brand": "Achilles",
+    "name": "Носки",
+    "cost": "1350",
+    "descr": "описание",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "1"
+    ],
+    "stock": "23",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": ""
+  },
+  {
+    "id": "24",
+    "category": "FabricsAccessories",
+    "brand": "Achilles",
+    "name": "Рюкзак13",
+    "cost": "1400",
+    "descr": "описание",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "3"
+    ],
+    "stock": "24",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": ""
+  },
+  {
+    "id": "25",
+    "category": "FabricsAccessories",
+    "brand": "Achilles",
+    "name": "Аптечка13",
+    "cost": "1450",
+    "descr": "описание",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "1"
+    ],
+    "stock": "25",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": ""
+  },
+  {
+    "id": "26",
+    "category": "FabricsAccessories",
+    "brand": "Achilles",
+    "name": "Рюкзак14",
+    "cost": "1500",
+    "descr": "описание",
+    "color": [
+      "Зеленые",
+      "Оранжевые"
+    ],
+    "sizes": [
+      "3"
+    ],
+    "stock": "26",
+    "photos": [
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
+    ],
+    "preview": "sumka1.jpg",
+    "": ""
+  }
 ]
