@@ -48,7 +48,7 @@
     "category": "Armor",
     "brand": "Achilles",
     "name": "Походный рюкзак ",
-    "cost": "888",
+    "cost": "904",
     "descr": "description item",
     "color": [
       "Олива",
@@ -70,7 +70,7 @@
     "category": "Unloading",
     "brand": "Achilles",
     "name": "Походный рюкзак ",
-    "cost": "999",
+    "cost": "1031",
     "descr": "description item",
     "color": [
       "Олива",
@@ -92,7 +92,7 @@
     "category": "Bibs",
     "brand": "Achilles",
     "name": "Походный рюкзак ",
-    "cost": "1110",
+    "cost": "1158",
     "descr": "description item",
     "color": [
       "Олива",
@@ -114,7 +114,7 @@
     "category": "Belts",
     "brand": "Achilles",
     "name": "Походный рюкзак ",
-    "cost": "1221",
+    "cost": "1285",
     "descr": "description item",
     "color": [
       "Олива",
@@ -136,7 +136,7 @@
     "category": "Pouches",
     "brand": "Achilles",
     "name": "Походный рюкзак ",
-    "cost": "1332",
+    "cost": "1412",
     "descr": "description item",
     "color": [
       "Олива",
@@ -158,7 +158,7 @@
     "category": "Cloth",
     "brand": "Achilles",
     "name": "Походный рюкзак ",
-    "cost": "1443",
+    "cost": "1539",
     "descr": "description item",
     "color": [
       "Олива",
@@ -178,9 +178,9 @@
   {
     "id": "",
     "category": "FabricsAccessories",
-    "brand": "",
+    "brand": "Achilles",
     "name": "Походный рюкзак ",
-    "cost": "",
+    "cost": "1666",
     "descr": "",
     "color": [
       ""
@@ -197,9 +197,9 @@
   {
     "id": "",
     "category": "Uncategorized",
-    "brand": "",
+    "brand": "Achilles",
     "name": "Походный рюкзак ",
-    "cost": "",
+    "cost": "1793",
     "descr": "",
     "color": [
       ""
