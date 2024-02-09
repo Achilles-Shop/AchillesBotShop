@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
  
  // Запрос в базу данных
   const getData = async () => {
-    const data = await fetch('db.json');
+    const data = await fetch('dbv2.json');
     if (data.ok) {
       return data.json();
     }
