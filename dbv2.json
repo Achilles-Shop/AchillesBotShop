@@ -2,7 +2,7 @@
   {
     "id": "1",
     "category": "кирилица",
-    "brand": "архилыактцйк",
+    "brand": "Achilles",
     "name": "Походный рюкзак ",
     "cost": "7777",
     "descr": "Описание",
@@ -24,7 +24,7 @@
   {
     "id": "2",
     "category": "кирилица",
-    "brand": "тактиккв",
+    "brand": "Achilles",
     "name": "сумка",
     "cost": "777",
     "descr": "description item",
