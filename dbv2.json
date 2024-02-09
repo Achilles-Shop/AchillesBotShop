@@ -13,11 +13,13 @@
     "sizes": [
       "2"
     ],
-    "stock": "EDCcut2.jpg, Podsumok1.jpg, watis.jpg",
+    "stock": "",
     "photos": [
-      "sumka1.jpg"
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
     ],
-    "preview": ""
+    "preview": "sumka1.jpg"
   },
   {
     "id": "2",
@@ -33,11 +35,13 @@
     "sizes": [
       "2"
     ],
-    "stock": "EDCcut2.jpg, Podsumok1.jpg, watis.jpg",
+    "stock": "",
     "photos": [
-      "sumka1.jpg"
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
     ],
-    "preview": ""
+    "preview": "sumka1.jpg"
   },
   {
     "id": "3",
@@ -53,11 +57,13 @@
     "sizes": [
       "2"
     ],
-    "stock": "EDCcut2.jpg, Podsumok1.jpg, watis.jpg",
+    "stock": "",
     "photos": [
-      "sumka1.jpg"
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
     ],
-    "preview": ""
+    "preview": "sumka1.jpg"
   },
   {
     "id": "4",
@@ -73,11 +79,13 @@
     "sizes": [
       "2"
     ],
-    "stock": "EDCcut2.jpg, Podsumok1.jpg, watis.jpg",
+    "stock": "",
     "photos": [
-      "sumka1.jpg"
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
     ],
-    "preview": ""
+    "preview": "sumka1.jpg"
   },
   {
     "id": "5",
@@ -93,11 +101,13 @@
     "sizes": [
       "2"
     ],
-    "stock": "EDCcut2.jpg, Podsumok1.jpg, watis.jpg",
+    "stock": "",
     "photos": [
-      "sumka1.jpg"
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
     ],
-    "preview": ""
+    "preview": "sumka1.jpg"
   },
   {
     "id": "6",
@@ -113,11 +123,13 @@
     "sizes": [
       "2"
     ],
-    "stock": "EDCcut2.jpg, Podsumok1.jpg, watis.jpg",
+    "stock": "",
     "photos": [
-      "sumka1.jpg"
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
     ],
-    "preview": ""
+    "preview": "sumka1.jpg"
   },
   {
     "id": "7",
@@ -133,11 +145,13 @@
     "sizes": [
       "2"
     ],
-    "stock": "EDCcut2.jpg, Podsumok1.jpg, watis.jpg",
+    "stock": "",
     "photos": [
-      "sumka1.jpg"
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
     ],
-    "preview": ""
+    "preview": "sumka1.jpg"
   },
   {
     "id": "8",
@@ -153,10 +167,12 @@
     "sizes": [
       "2"
     ],
-    "stock": "EDCcut2.jpg, Podsumok1.jpg, watis.jpg",
+    "stock": "",
     "photos": [
-      "sumka1.jpg"
+      "EDCcut2.jpg",
+      "Podsumok1.jpg",
+      "watis.jpg"
     ],
-    "preview": ""
+    "preview": "sumka1.jpg"
   }
 ]
