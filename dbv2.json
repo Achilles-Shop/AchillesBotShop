@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "category": "кирилица",
+    "category": "Backpacks",
     "brand": "Achilles",
     "name": "Походный рюкзак ",
     "cost": "7777",
@@ -23,7 +23,7 @@
   },
   {
     "id": "2",
-    "category": "кирилица",
+    "category": "\"\": \"\"",
     "brand": "Achilles",
     "name": "сумка",
     "cost": "777",
@@ -45,7 +45,7 @@
   },
   {
     "id": "3",
-    "category": "Unloading",
+    "category": "\"\": \"\"",
     "brand": "Achilles",
     "name": "Podsumok03",
     "cost": "888",
@@ -67,7 +67,7 @@
   },
   {
     "id": "4",
-    "category": "Bibs",
+    "category": "\"\": \"\"",
     "brand": "Achilles",
     "name": "Podsumok04",
     "cost": "999",
@@ -89,7 +89,7 @@
   },
   {
     "id": "5",
-    "category": "Belts",
+    "category": "\"\": \"\"",
     "brand": "Achilles",
     "name": "Podsumok05",
     "cost": "1110",
@@ -111,7 +111,7 @@
   },
   {
     "id": "6",
-    "category": "CatPouches",
+    "category": "\"\": \"\"",
     "brand": "Achilles",
     "name": "Podsumok06",
     "cost": "1221",
@@ -133,7 +133,7 @@
   },
   {
     "id": "7",
-    "category": "CatCloth",
+    "category": "\"\": \"\"",
     "brand": "Achilles",
     "name": "Podsumok07",
     "cost": "1332",
@@ -155,7 +155,7 @@
   },
   {
     "id": "8",
-    "category": "FabricsAccessories",
+    "category": "\"\": \"\"",
     "brand": "Achilles",
     "name": "Podsumok08",
     "cost": "1443",
@@ -174,5 +174,347 @@
       "watis.jpg"
     ],
     "preview": "sumka1.jpg"
+  },
+  {
+    "id": "",
+    "category": "\"\": \"\"",
+    "brand": "",
+    "name": "",
+    "cost": "",
+    "descr": "",
+    "color": [
+      ""
+    ],
+    "sizes": [
+      ""
+    ],
+    "stock": "",
+    "photos": [
+      ""
+    ],
+    "preview": ""
+  },
+  {
+    "id": "",
+    "category": "\"\": \"\"",
+    "brand": "",
+    "name": "",
+    "cost": "",
+    "descr": "",
+    "color": [
+      ""
+    ],
+    "sizes": [
+      ""
+    ],
+    "stock": "",
+    "photos": [
+      ""
+    ],
+    "preview": ""
+  },
+  {
+    "id": "",
+    "category": "\"\": \"\"",
+    "brand": "",
+    "name": "",
+    "cost": "",
+    "descr": "",
+    "color": [
+      ""
+    ],
+    "sizes": [
+      ""
+    ],
+    "stock": "",
+    "photos": [
+      ""
+    ],
+    "preview": ""
+  },
+  {
+    "id": "",
+    "category": "\"\": \"\"",
+    "brand": "",
+    "name": "",
+    "cost": "",
+    "descr": "",
+    "color": [
+      ""
+    ],
+    "sizes": [
+      ""
+    ],
+    "stock": "",
+    "photos": [
+      ""
+    ],
+    "preview": ""
+  },
+  {
+    "id": "",
+    "category": "\"\": \"\"",
+    "brand": "",
+    "name": "",
+    "cost": "",
+    "descr": "",
+    "color": [
+      ""
+    ],
+    "sizes": [
+      ""
+    ],
+    "stock": "",
+    "photos": [
+      ""
+    ],
+    "preview": ""
+  },
+  {
+    "id": "",
+    "category": "\"\": \"\"",
+    "brand": "",
+    "name": "",
+    "cost": "",
+    "descr": "",
+    "color": [
+      ""
+    ],
+    "sizes": [
+      ""
+    ],
+    "stock": "",
+    "photos": [
+      ""
+    ],
+    "preview": ""
+  },
+  {
+    "id": "",
+    "category": "\"\": \"\"",
+    "brand": "",
+    "name": "",
+    "cost": "",
+    "descr": "",
+    "color": [
+      ""
+    ],
+    "sizes": [
+      ""
+    ],
+    "stock": "",
+    "photos": [
+      ""
+    ],
+    "preview": ""
+  },
+  {
+    "id": "",
+    "category": "\"\": \"\"",
+    "brand": "",
+    "name": "",
+    "cost": "",
+    "descr": "",
+    "color": [
+      ""
+    ],
+    "sizes": [
+      ""
+    ],
+    "stock": "",
+    "photos": [
+      ""
+    ],
+    "preview": ""
+  },
+  {
+    "id": "",
+    "category": "\"\": \"\"",
+    "brand": "",
+    "name": "",
+    "cost": "",
+    "descr": "",
+    "color": [
+      ""
+    ],
+    "sizes": [
+      ""
+    ],
+    "stock": "",
+    "photos": [
+      ""
+    ],
+    "preview": ""
+  },
+  {
+    "id": "",
+    "category": "\"\": \"\"",
+    "brand": "",
+    "name": "",
+    "cost": "",
+    "descr": "",
+    "color": [
+      ""
+    ],
+    "sizes": [
+      ""
+    ],
+    "stock": "",
+    "photos": [
+      ""
+    ],
+    "preview": ""
+  },
+  {
+    "id": "",
+    "category": "\"\": \"\"",
+    "brand": "",
+    "name": "",
+    "cost": "",
+    "descr": "",
+    "color": [
+      ""
+    ],
+    "sizes": [
+      ""
+    ],
+    "stock": "",
+    "photos": [
+      ""
+    ],
+    "preview": ""
+  },
+  {
+    "id": "",
+    "category": "\"\": \"\"",
+    "brand": "",
+    "name": "",
+    "cost": "",
+    "descr": "",
+    "color": [
+      ""
+    ],
+    "sizes": [
+      ""
+    ],
+    "stock": "",
+    "photos": [
+      ""
+    ],
+    "preview": ""
+  },
+  {
+    "id": "",
+    "category": "\"\": \"\"",
+    "brand": "",
+    "name": "",
+    "cost": "",
+    "descr": "",
+    "color": [
+      ""
+    ],
+    "sizes": [
+      ""
+    ],
+    "stock": "",
+    "photos": [
+      ""
+    ],
+    "preview": ""
+  },
+  {
+    "id": "",
+    "category": "\"\": \"\"",
+    "brand": "",
+    "name": "",
+    "cost": "",
+    "descr": "",
+    "color": [
+      ""
+    ],
+    "sizes": [
+      ""
+    ],
+    "stock": "",
+    "photos": [
+      ""
+    ],
+    "preview": ""
+  },
+  {
+    "id": "",
+    "category": "\"\": \"\"",
+    "brand": "",
+    "name": "",
+    "cost": "",
+    "descr": "",
+    "color": [
+      ""
+    ],
+    "sizes": [
+      ""
+    ],
+    "stock": "",
+    "photos": [
+      ""
+    ],
+    "preview": ""
+  },
+  {
+    "id": "",
+    "category": "\"\": \"\"",
+    "brand": "",
+    "name": "",
+    "cost": "",
+    "descr": "",
+    "color": [
+      ""
+    ],
+    "sizes": [
+      ""
+    ],
+    "stock": "",
+    "photos": [
+      ""
+    ],
+    "preview": ""
+  },
+  {
+    "id": "",
+    "category": "\"\": \"\"",
+    "brand": "",
+    "name": "",
+    "cost": "",
+    "descr": "",
+    "color": [
+      ""
+    ],
+    "sizes": [
+      ""
+    ],
+    "stock": "",
+    "photos": [
+      ""
+    ],
+    "preview": ""
+  },
+  {
+    "id": "",
+    "category": "\"\": \"\"",
+    "brand": "",
+    "name": "",
+    "cost": "",
+    "descr": "",
+    "color": [
+      ""
+    ],
+    "sizes": [
+      ""
+    ],
+    "stock": "",
+    "photos": [
+      ""
+    ],
+    "preview": ""
   }
 ]
