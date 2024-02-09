@@ -1,9 +1,0 @@
-<!-- Секция контактов -->
-        <section class="contacts">
-            <div class="container">
-                <h2>Контакты</h2>
-                <p>Наш адрес: Город, Улица, Дом</p>
-                <p>Телефон: +7 (XXX) XXX-XX-XX</p>
-                <p>Email: info@achilles-shop.com</p>
-            </div>
-        </section>
