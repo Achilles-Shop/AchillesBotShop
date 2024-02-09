@@ -546,6 +546,7 @@ button {
     height: auto;
     margin-top: 20px; /* Ваш отступ сверху */
     margin-bottom: 20px; /* Ваш отступ сверху */
+    text-align: center;
     swiper-theme-color: #FF0000;
   }
 
