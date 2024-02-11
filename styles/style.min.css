@@ -486,6 +486,24 @@ button {
 
 
 
+.square-container {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* Соотношение сторон 1:1 */
+}
+
+.square-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
 @media (max-width: 968px) {
     .card-good__description {
         display: -ms-grid;
