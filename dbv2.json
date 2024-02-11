@@ -1,18 +1,18 @@
 [
   {
-    "id": "",
-    "category": "",
-    "brand": "",
-    "name": "",
-    "cost": "",
-    "descr": "",
+    "id": "1",
+    "category": "Backpacks",
+    "brand": "бренд",
+    "name": "название",
+    "cost": "цена ",
+    "descr": "описание",
     "color": [
-      ""
+      "цвет"
     ],
     "sizes": [
-      ""
+      "размер"
     ],
-    "stock": "",
+    "stock": "наличе",
     "photos": [
       ""
     ],
@@ -290,17 +290,17 @@
   {
     "id": "",
     "category": "\"\": \"\"",
-    "brand": "бренд",
-    "name": "название",
-    "cost": "цена ",
-    "descr": "описание",
+    "brand": "",
+    "name": "",
+    "cost": "",
+    "descr": "",
     "color": [
-      "цвет"
+      ""
     ],
     "sizes": [
-      "размер"
+      ""
     ],
-    "stock": "наличе",
+    "stock": "",
     "photos": [
       ""
     ],
