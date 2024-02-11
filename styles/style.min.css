@@ -450,6 +450,42 @@ button {
   
 }
 
+.card-good__contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; /* Ваш отступ снизу */
+    margin-bottom: 60px; /* Ваш отступ снизу */
+    gap: 5px; /* Расстояние между блоками внутри */
+}
+
+
+.admin_button {
+    flex: 1; /* Растягиваем кнопку на доступную ширину */
+    background-color: #000;
+    color: #FFF;
+    padding: 17px 17px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
+
+}
+
+.fa fa-facebook{
+    grid-column: 1; 
+    text-align: left; /* Выравниваем текст вправо */
+    margin-bottom: 0px
+}
+
+.fa fa-instagram{
+    grid-column: 1; 
+    text-align: left; /* Выравниваем текст вправо */
+    margin-bottom: 0px
+}
+
+
+
+
 @media (max-width: 968px) {
     .card-good__description {
         display: -ms-grid;
@@ -501,6 +537,7 @@ button {
         grid-row: auto
     }
 }
+
 
 .card-good__price {
     font-size: 23px;
