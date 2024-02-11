@@ -1,5 +1,24 @@
 [
   {
+    "id": "",
+    "category": "",
+    "brand": "",
+    "name": "",
+    "cost": "",
+    "descr": "",
+    "color": [
+      ""
+    ],
+    "sizes": [
+      ""
+    ],
+    "stock": "",
+    "photos": [
+      ""
+    ],
+    "preview": ""
+  },
+  {
     "id": "1",
     "category": "Backpacks",
     "brand": "Achilles",
