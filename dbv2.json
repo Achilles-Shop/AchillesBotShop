@@ -25,7 +25,8 @@
       "BackPack016.jpg",
       "BackPack013.jpg"
     ],
-    "preview": "BackPack012.jpg"
+    "preview": "BackPack012.jpg",
+    "previewURL": ""
   },
   {
     "id": "2",
@@ -53,7 +54,8 @@
       "BackPack016.jpg",
       "BackPack013.jpg"
     ],
-    "preview": "BackPack012.jpg"
+    "preview": "BackPack012.jpg",
+    "previewURL": ""
   },
   {
     "id": "3",
@@ -81,7 +83,8 @@
       "BackPack016.jpg",
       "BackPack013.jpg"
     ],
-    "preview": "BackPack012.jpg"
+    "preview": "BackPack012.jpg",
+    "previewURL": ""
   },
   {
     "id": "4",
@@ -109,7 +112,8 @@
       "BackPack016.jpg",
       "BackPack013.jpg"
     ],
-    "preview": "BackPack012.jpg"
+    "preview": "BackPack012.jpg",
+    "previewURL": ""
   },
   {
     "id": "5",
@@ -137,7 +141,8 @@
       "BackPack016.jpg",
       "BackPack013.jpg"
     ],
-    "preview": "BackPack012.jpg"
+    "preview": "BackPack012.jpg",
+    "previewURL": ""
   },
   {
     "id": "6",
@@ -165,7 +170,8 @@
       "BackPack016.jpg",
       "BackPack013.jpg"
     ],
-    "preview": "BackPack012.jpg"
+    "preview": "BackPack012.jpg",
+    "previewURL": ""
   },
   {
     "id": "7",
@@ -193,7 +199,8 @@
       "BackPack016.jpg",
       "BackPack013.jpg"
     ],
-    "preview": "BackPack012.jpg"
+    "preview": "BackPack012.jpg",
+    "previewURL": ""
   },
   {
     "id": "8",
@@ -221,7 +228,8 @@
       "BackPack016.jpg",
       "BackPack013.jpg"
     ],
-    "preview": "BackPack012.jpg"
+    "preview": "BackPack012.jpg",
+    "previewURL": ""
   },
   {
     "id": "9",
@@ -249,7 +257,8 @@
       "BackPack016.jpg",
       "BackPack013.jpg"
     ],
-    "preview": "BackPack012.jpg"
+    "preview": "BackPack012.jpg",
+    "previewURL": ""
   },
   {
     "id": "10",
@@ -277,7 +286,8 @@
       "BackPack016.jpg",
       "BackPack013.jpg"
     ],
-    "preview": "BackPack012.jpg"
+    "preview": "BackPack012.jpg",
+    "previewURL": ""
   },
   {
     "id": "11",
@@ -294,8 +304,9 @@
     ],
     "stock": "2",
     "photos": [
-      "Catalog_Images/12.photos.141256.jpg"
+      "Catalog_Images/12.photos.142832.jpg"
     ],
-    "preview": "Catalog_Images/12.preview.141256.jpg"
+    "preview": "Catalog_Images/12.preview.142832.jpg",
+    "previewURL": ""
   }
 ]
