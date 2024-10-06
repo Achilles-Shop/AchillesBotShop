@@ -4,7 +4,7 @@
     "category": "Backpacks",
     "brand": "Achilles",
     "name": "Походный рюкзак ",
-    "cost": "2000",
+    "cost": "20002",
     "descr": "Удобный рюкзак с климат контролем для переноски тяжелых грузов во время продолжительных горных походов и треккинга. Его объем которого регулируется с помощью боковых компрессионных строп, а так же с помощью лямок адаптируется к любой фигуре, что делает рюкзак универсальным для каждого.",
     "color": [
       "олива",
@@ -20,8 +20,7 @@
     "photos": [
       "Catalog_Images/2.photos.144219.jpg"
     ],
-    "preview": "Catalog_Images/2.preview.144219.jpg",
-    "previewURL": "https://www.appsheet.com/image/getimageurl?appName=ACHILLESSHOP-573952786&tableName=Catalog&fileName=Catalog_Images%2F2.photos.144219.jpg&appVersion=1.000031&signature=36e21c6646c099da1d9f27d2b6cc799aa23ec8af112c1149a80f3e2cac2ca525"
+    "preview": "Catalog_Images/2.preview.144219.jpg"
   },
   {
     "id": "2",
@@ -49,8 +48,7 @@
       "BackPack016.jpg",
       "BackPack013.jpg"
     ],
-    "preview": "BackPack012.jpg",
-    "previewURL": ""
+    "preview": "BackPack012.jpg"
   },
   {
     "id": "3",
@@ -78,8 +76,7 @@
       "BackPack016.jpg",
       "BackPack013.jpg"
     ],
-    "preview": "BackPack012.jpg",
-    "previewURL": ""
+    "preview": "BackPack012.jpg"
   },
   {
     "id": "4",
@@ -107,8 +104,7 @@
       "BackPack016.jpg",
       "BackPack013.jpg"
     ],
-    "preview": "BackPack012.jpg",
-    "previewURL": ""
+    "preview": "BackPack012.jpg"
   },
   {
     "id": "5",
@@ -136,8 +132,7 @@
       "BackPack016.jpg",
       "BackPack013.jpg"
     ],
-    "preview": "BackPack012.jpg",
-    "previewURL": ""
+    "preview": "BackPack012.jpg"
   },
   {
     "id": "6",
@@ -165,8 +160,7 @@
       "BackPack016.jpg",
       "BackPack013.jpg"
     ],
-    "preview": "BackPack012.jpg",
-    "previewURL": ""
+    "preview": "BackPack012.jpg"
   },
   {
     "id": "7",
@@ -194,8 +188,7 @@
       "BackPack016.jpg",
       "BackPack013.jpg"
     ],
-    "preview": "BackPack012.jpg",
-    "previewURL": ""
+    "preview": "BackPack012.jpg"
   },
   {
     "id": "8",
@@ -223,8 +216,7 @@
       "BackPack016.jpg",
       "BackPack013.jpg"
     ],
-    "preview": "BackPack012.jpg",
-    "previewURL": ""
+    "preview": "BackPack012.jpg"
   },
   {
     "id": "9",
@@ -252,8 +244,7 @@
       "BackPack016.jpg",
       "BackPack013.jpg"
     ],
-    "preview": "BackPack012.jpg",
-    "previewURL": ""
+    "preview": "BackPack012.jpg"
   },
   {
     "id": "10",
@@ -281,8 +272,7 @@
       "BackPack016.jpg",
       "BackPack013.jpg"
     ],
-    "preview": "BackPack012.jpg",
-    "previewURL": ""
+    "preview": "BackPack012.jpg"
   },
   {
     "id": "11",
@@ -295,13 +285,12 @@
       "Олива"
     ],
     "sizes": [
-      "S"
+      "SS"
     ],
     "stock": "2",
     "photos": [
       "Catalog_Images/12.photos.142832.jpg"
     ],
-    "preview": "Catalog_Images/12.preview.142832.jpg",
-    "previewURL": ""
+    "preview": "Catalog_Images/12.preview.142832.jpg"
   }
 ]
