@@ -18,15 +18,10 @@
     ],
     "stock": "0",
     "photos": [
-      "BackPack012.jpg",
-      "BackPack014.jpg",
-      "BackPack011.jpg",
-      "BackPack015.jpg",
-      "BackPack016.jpg",
-      "BackPack013.jpg"
+      "Catalog_Images/2.photos.144219.jpg"
     ],
-    "preview": "BackPack012.jpg",
-    "previewURL": ""
+    "preview": "Catalog_Images/2.preview.144219.jpg",
+    "previewURL": "https://www.appsheet.com/template/gettablefileurl?appName=f0c891cd-3434-430d-9dfe-52aa66a3fe55&tableName=Catalog&fileName="
   },
   {
     "id": "2",
