@@ -17,10 +17,10 @@
       "-"
     ],
     "stock": "0",
+    "preview": "Catalog_Images/2.preview.151328.jpg",
     "photos": [
       "Catalog_Images/2.photos.144219.jpg"
-    ],
-    "preview": "Catalog_Images/2.preview.151328.jpg"
+    ]
   },
   {
     "id": "2",
@@ -40,6 +40,7 @@
       "-"
     ],
     "stock": "0",
+    "preview": "BackPack012.jpg",
     "photos": [
       "BackPack012.jpg",
       "BackPack014.jpg",
@@ -47,8 +48,7 @@
       "BackPack015.jpg",
       "BackPack016.jpg",
       "BackPack013.jpg"
-    ],
-    "preview": "BackPack012.jpg"
+    ]
   },
   {
     "id": "3",
@@ -68,6 +68,7 @@
       "-"
     ],
     "stock": "0",
+    "preview": "BackPack012.jpg",
     "photos": [
       "BackPack012.jpg",
       "BackPack014.jpg",
@@ -75,8 +76,7 @@
       "BackPack015.jpg",
       "BackPack016.jpg",
       "BackPack013.jpg"
-    ],
-    "preview": "BackPack012.jpg"
+    ]
   },
   {
     "id": "4",
@@ -96,6 +96,7 @@
       "-"
     ],
     "stock": "0",
+    "preview": "BackPack012.jpg",
     "photos": [
       "BackPack012.jpg",
       "BackPack014.jpg",
@@ -103,8 +104,7 @@
       "BackPack015.jpg",
       "BackPack016.jpg",
       "BackPack013.jpg"
-    ],
-    "preview": "BackPack012.jpg"
+    ]
   },
   {
     "id": "5",
@@ -124,6 +124,7 @@
       "-"
     ],
     "stock": "0",
+    "preview": "BackPack012.jpg",
     "photos": [
       "BackPack012.jpg",
       "BackPack014.jpg",
@@ -131,8 +132,7 @@
       "BackPack015.jpg",
       "BackPack016.jpg",
       "BackPack013.jpg"
-    ],
-    "preview": "BackPack012.jpg"
+    ]
   },
   {
     "id": "6",
@@ -152,6 +152,7 @@
       "-"
     ],
     "stock": "0",
+    "preview": "BackPack012.jpg",
     "photos": [
       "BackPack012.jpg",
       "BackPack014.jpg",
@@ -159,8 +160,7 @@
       "BackPack015.jpg",
       "BackPack016.jpg",
       "BackPack013.jpg"
-    ],
-    "preview": "BackPack012.jpg"
+    ]
   },
   {
     "id": "7",
@@ -180,6 +180,7 @@
       "-"
     ],
     "stock": "0",
+    "preview": "BackPack012.jpg",
     "photos": [
       "BackPack012.jpg",
       "BackPack014.jpg",
@@ -187,8 +188,7 @@
       "BackPack015.jpg",
       "BackPack016.jpg",
       "BackPack013.jpg"
-    ],
-    "preview": "BackPack012.jpg"
+    ]
   },
   {
     "id": "8",
@@ -208,6 +208,7 @@
       "-"
     ],
     "stock": "0",
+    "preview": "BackPack012.jpg",
     "photos": [
       "BackPack012.jpg",
       "BackPack014.jpg",
@@ -215,8 +216,7 @@
       "BackPack015.jpg",
       "BackPack016.jpg",
       "BackPack013.jpg"
-    ],
-    "preview": "BackPack012.jpg"
+    ]
   },
   {
     "id": "9",
@@ -236,6 +236,7 @@
       "-"
     ],
     "stock": "0",
+    "preview": "BackPack012.jpg",
     "photos": [
       "BackPack012.jpg",
       "BackPack014.jpg",
@@ -243,8 +244,7 @@
       "BackPack015.jpg",
       "BackPack016.jpg",
       "BackPack013.jpg"
-    ],
-    "preview": "BackPack012.jpg"
+    ]
   },
   {
     "id": "10",
@@ -264,6 +264,7 @@
       "-"
     ],
     "stock": "0",
+    "preview": "BackPack012.jpg",
     "photos": [
       "BackPack012.jpg",
       "BackPack014.jpg",
@@ -271,8 +272,7 @@
       "BackPack015.jpg",
       "BackPack016.jpg",
       "BackPack013.jpg"
-    ],
-    "preview": "BackPack012.jpg"
+    ]
   },
   {
     "id": "11",
@@ -288,9 +288,9 @@
       "SSS"
     ],
     "stock": "2",
+    "preview": "Catalog_Images/12.preview.142832.jpg",
     "photos": [
       "Catalog_Images/12.photos.142832.jpg"
-    ],
-    "preview": "Catalog_Images/12.preview.142832.jpg"
+    ]
   }
 ]
