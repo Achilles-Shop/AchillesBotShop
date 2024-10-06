@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
       li.innerHTML = `
       <article class="good">
         <a class="good__link-img" href="card-good.html#${id}">
-          <img class="good__img" src="./images/goods-image/${preview}" alt="">
+          <img class="good__img" src="https://www.appsheet.com/template/gettablefileurl?appName=f0c891cd-3434-430d-9dfe-52aa66a3fe55&tableName=Catalog&fileName=${preview}" alt="">
         </a>
         <div class="good__description">
           <p class="good__price">${cost} RUB</p>
