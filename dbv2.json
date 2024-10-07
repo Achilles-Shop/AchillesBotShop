@@ -326,25 +326,28 @@
     "photos4": "Catalog_Images/2.preview.151328.jpg"
   },
   {
-    "id": "",
-    "category": "",
-    "brand": "",
-    "name": "",
-    "cost": "",
-    "descr": "",
+    "id": "12",
+    "category": "Backpacks",
+    "brand": "Achilles",
+    "name": "Тактический рюкзак",
+    "cost": "250",
+    "descr": "Описание",
     "color": [
-      ""
+      "Мультикам"
     ],
     "sizes": [
-      ""
+      "S"
     ],
-    "stock": "",
-    "preview": "",
+    "stock": "2",
+    "preview": "Catalog_Images/13.preview.094424.jpg",
     "photos": [
+      "Catalog_Images/13.photos1.094424.jpg",
+      "Catalog_Images/13.photos2.094424.jpg",
+      "",
       ""
     ],
-    "photos1": "",
-    "photos2": "",
+    "photos1": "Catalog_Images/13.photos1.094424.jpg",
+    "photos2": "Catalog_Images/13.photos2.094424.jpg",
     "photos3": "",
     "photos4": ""
   },
