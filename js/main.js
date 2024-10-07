@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function () {
       photos.forEach(photo => {
         const slide = document.createElement('div');
         slide.classList.add('swiper-slide');
-        slide.innerHTML = `<img src="./images/goods-image/${photo}">`;
+        slide.innerHTML = `<img src="https://www.appsheet.com/template/gettablefileurl?appName=f0c891cd-3434-430d-9dfe-52aa66a3fe55&tableName=Catalog&fileName=${photo}">`;
         swiperWrapper.appendChild(slide);
       });
        // слайдер--------------------------------------------------
