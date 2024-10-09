@@ -104,7 +104,23 @@
           
             
              
-               <button class="buy_button" onclick="location.href='https://t.me/myradima'">Заказать</button>
+               <button class="buy_button" onclick="order()">Заказать</button>
+
+<script>
+function order() {
+    // Получаем текст из элемента с классом 'card-good__title'
+    var productTitle = document.querySelector('.card-good__title').innerText;
+
+    // Кодируем текст для URL
+    var encodedTitle = encodeURIComponent(productTitle);
+
+    // Формируем ссылку
+    var url = 'https://t.me/myradima?text=Здравствуй%20хочу%20купить%20' + encodedTitle;
+
+    // Перенаправляем пользователя по ссылке
+    location.href = url;
+}
+</script>
 
             </div>
          
