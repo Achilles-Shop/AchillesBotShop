@@ -104,23 +104,28 @@
           
             
              
-               <button class="buy_button" onclick="order()">Заказать</button>
+              <button class="buy_button" onclick="order()">Заказать</button>
 
 <script>
 function order() {
     // Получаем текст из элемента с классом 'card-good__title'
     var productTitle = document.querySelector('.card-good__title').innerText;
+    
+    // Получаем цену из элемента с классом 'card-good__price'
+    var productPrice = document.querySelector('.card-good__price').innerText;
 
     // Кодируем текст для URL
     var encodedTitle = encodeURIComponent(productTitle);
+    var encodedPrice = encodeURIComponent(productPrice);
 
     // Формируем ссылку
-    var url = 'https://t.me/myradima?text=Здравствуй%20хочу%20купить%20' + encodedTitle;
+    var url = 'https://t.me/myradima?text=Здравствуй%20хочу%20купить%20' + encodedTitle + '%2C%20за%20' + encodedPrice + '%20рублей';
 
     // Перенаправляем пользователя по ссылке
     location.href = url;
 }
 </script>
+
 
             </div>
          
